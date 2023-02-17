@@ -2,21 +2,24 @@ package ss1_Introdution_to_Java;
 
 import java.util.Scanner;
 
-public class text_3 {
+public class Bai3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int rate = 23000;
-        System.out.println("Nhập số tiền:");
-        int mn = Integer.parseInt(sc.nextLine());
+        int input;
+        do {
+            System.out.println("Nhập số tiền lớn hơn 0");
+            input = Integer.parseInt(sc.nextLine());
+        } while (input < 0);
         System.out.println("Bạn muốn quy đổi sang VND hay USD:");
         String a = sc.nextLine();
         int money;
-        if (a.equals("USD")||a.equals("usd")){
-            money = mn/rate;
+        if (a.equals("USD") || a.equals("usd")) {
+            money = input / rate;
             System.out.println(" Tổng số tiền là:" + money);
-        }else if (a.equals("VND")||a.equals("vnd")){
-            money = mn*rate;
+        } else if (a.equals("VND") || a.equals("vnd")) {
+            money = input * rate;
             System.out.println(" Tổng số tiền là:" + money);
         }
 
