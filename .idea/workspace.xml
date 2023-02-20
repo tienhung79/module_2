@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/OccurrencesCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/OccurrencesCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/SumInColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/SumInColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/SumOfADiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/SumOfADiagonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.OccurrencesCount">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="AddValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.AddValue" />
       <module name="Module 2" />
@@ -118,10 +115,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.OccurrencesCount" />
         <item itemvalue="Application.SumOfADiagonal" />
         <item itemvalue="Application.SumInColumn" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.AddValue" />
       </list>
     </recent_temporary>
@@ -142,7 +139,7 @@
       <workItem from="1676615409357" duration="7757000" />
       <workItem from="1676704827436" duration="1881000" />
       <workItem from="1676810684947" duration="11825000" />
-      <workItem from="1676860030095" duration="2565000" />
+      <workItem from="1676860030095" duration="5555000" />
     </task>
     <servers />
   </component>

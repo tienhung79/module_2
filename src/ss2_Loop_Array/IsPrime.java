@@ -6,13 +6,13 @@ public class IsPrime {
         int count = 0;
         int number = 2;
         while (count < 20) {
-            int count1 = 0;
+            int countPrime= 0;
             for (int i = 1; i <= number; i++) {
                 if (number % i == 0) {
-                    count1++;
+                    countPrime++;
                 }
             }
-            if (count1 == 2) {
+            if (countPrime == 2) {
                 System.out.println(number);
                 count++;
             }
