@@ -21,15 +21,28 @@ public class SumOfADiagonal {
             }
         }
         System.out.println(Arrays.deepToString(array));
+        sum(array);
+        sum1(array);
+
+
+    }
+
+    static int sum(int[][] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i][i];
         }
         System.out.println("Tổng đường chéo thứ nhất:" + sum);
+        return sum;
+    }
+
+    static int sum1(int[][] array) {
         int sum1 = 0;
-        for (int i = array.length-1; i >= 0; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
             sum1 += array[i][i];
         }
         System.out.println("Tổng đường chéo thứ hai:" + sum1);
+        return sum1;
     }
+
 }

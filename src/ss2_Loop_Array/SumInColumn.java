@@ -18,6 +18,12 @@ public class SumInColumn {
             }
         }
         System.out.println(Arrays.deepToString(array));
+        System.out.println("Tổng là:" + sum(array));
+
+    }
+
+    static int sum(int[][] array) {
+        Scanner sc = new Scanner(System.in);
         int sum = 0;
         int j;
         do {
@@ -27,6 +33,6 @@ public class SumInColumn {
         for (int i = 0; i < array.length; i++) {
             sum += array[i][j];
         }
-        System.out.println("Tổng của cột đó là:" + sum);
+        return sum;
     }
 }
