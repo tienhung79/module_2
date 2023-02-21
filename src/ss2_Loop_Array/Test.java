@@ -4,13 +4,7 @@ import java.util.Scanner;
 import java.lang.Math;
 public class Test {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("nhập số:");
-        int a = sc.nextInt();
-        System.out.println("nhập số:");
-        int b = sc.nextInt();
-        int c =Math.max(a,b);
-        System.out.println("Kết quả là:");
+        float c= 7777777777777774565467777777777777777.0234234234324234324324f;
         System.out.println(c);
     }
 }

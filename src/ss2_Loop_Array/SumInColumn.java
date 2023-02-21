@@ -29,8 +29,8 @@ public class SumInColumn {
         do {
             System.out.println("Bạn muốn tính cột thứ mấy:");
             j = sc.nextInt();
-        } while (j < 0);
-        for (int i = 0; i < array.length; i++) {
+        } while (j < 0 || j >= array[0].length );
+        for ( int i = 0; i < array.length; i++) {
             sum += array[i][j];
         }
         return sum;

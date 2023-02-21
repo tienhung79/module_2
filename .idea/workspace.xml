@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object/Rectangle/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object/Rectangle/Rectangle1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object/quadracticequation/QuadracticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object/quadracticequation/QuadracticEquation1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_class_object/stopwatch/StopWatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/SumInColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/SumInColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/SumOfADiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/SumOfADiagonal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss2_Loop_Array/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss2_Loop_Array/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,34 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C1222G1-NgoTienHung/Module 1/ss10+ss11_vong_lap/LT2_bai3.html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/C1222G1-NgoTienHung/Module 1/ss16_ss17_OOP/temperature.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="AddValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.AddValue" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss2_Loop_Array.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager" selected="Application.SumInColumn">
     <configuration name="OccurrencesCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.OccurrencesCount" />
       <module name="Module 2" />
@@ -74,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumInColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.SumInColumn" />
+    <configuration name="QuadracticEquation1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object.quadracticequation.QuadracticEquation1" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_Loop_Array.*" />
+          <option name="PATTERN" value="ss4_class_object.quadracticequation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,8 +81,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfADiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.SumOfADiagonal" />
+    <configuration name="Rectangle1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_class_object.Rectangle.Rectangle1" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss4_class_object.Rectangle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumInColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.SumInColumn" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumInColumn" />
+        <item itemvalue="Application.QuadracticEquation1" />
+        <item itemvalue="Application.Rectangle1" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.OccurrencesCount" />
-        <item itemvalue="Application.SumOfADiagonal" />
-        <item itemvalue="Application.SumInColumn" />
-        <item itemvalue="Application.AddValue" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +146,8 @@
       <workItem from="1676615409357" duration="7757000" />
       <workItem from="1676704827436" duration="1881000" />
       <workItem from="1676810684947" duration="11825000" />
-      <workItem from="1676860030095" duration="5555000" />
+      <workItem from="1676860030095" duration="7367000" />
+      <workItem from="1676947912949" duration="12729000" />
     </task>
     <servers />
   </component>
