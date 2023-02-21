@@ -2,7 +2,7 @@ package ss4_class_object.quadracticequation;
 
 import java.util.Scanner;
 
-public class QuadracticEquation1 {
+public class QuadracticEquationMain {
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("Nhập số a:");

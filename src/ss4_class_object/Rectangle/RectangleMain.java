@@ -2,7 +2,7 @@ package ss4_class_object.Rectangle;
 
 import java.util.Scanner;
 
-public class Rectangle1 {
+public class RectangleMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the width");
