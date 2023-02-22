@@ -1,34 +1,25 @@
 package ss4_class_object.fan;
 
 public class Fan {
-    byte slow = 1, medium = 2, fast = 3;
-    int speed = slow;
+    final byte Slow = 1;
+    final byte medium = 2;
+    final byte fast = 3;
+
+    int speed = Slow;
     boolean on = false;
     double radius = 5;
     String color = "blue";
 
     public byte getSlow() {
-        return slow;
-    }
-
-    public void setSlow(byte slow) {
-        this.slow = slow;
+        return Slow;
     }
 
     public byte getMedium() {
         return medium;
     }
 
-    public void setMedium(byte medium) {
-        this.medium = medium;
-    }
-
     public byte getFast() {
         return fast;
-    }
-
-    public void setFast(byte fast) {
-        this.fast = fast;
     }
 
     public int getSpeed() {
@@ -36,16 +27,22 @@ public class Fan {
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+        if (getOn()) {
+            this.speed = 0;
+        } else {
+            this.speed = speed;
+        }
     }
 
-    public boolean isOn() {
-        return on;
-    }
+
 
     public void setOn(boolean on) {
         this.on = on;
     }
+    public boolean getOn(){
+        return this.on;
+    }
+
 
     public double getRadius() {
         return radius;
@@ -66,8 +63,6 @@ public class Fan {
     @Override
     public String toString() {
         return "Fan{" +
-                "medium=" + medium +
-                ", fast=" + fast +
                 ", speed=" + speed +
                 ", on=" + on +
                 ", radius=" + radius +

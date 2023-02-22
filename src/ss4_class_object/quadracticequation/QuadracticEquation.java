@@ -1,7 +1,9 @@
 package ss4_class_object.quadracticequation;
 
 public class QuadracticEquation {
-    double a, b, c;
+    double a;
+    double b;
+    double c;
 
     public QuadracticEquation(double a, double b, double c) {
         this.a = a;
