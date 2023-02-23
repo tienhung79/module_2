@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss5_AM_StaticMethod/Student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss5_AM_StaticMethod/Student/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +135,7 @@
       <workItem from="1676988115843" duration="9058000" />
       <workItem from="1677036116658" duration="9121000" />
       <workItem from="1677051173571" duration="5926000" />
-      <workItem from="1677122488969" duration="389000" />
+      <workItem from="1677122488969" duration="1181000" />
     </task>
     <servers />
   </component>
