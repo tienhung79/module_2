@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/CirleMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/CylinderMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point2D/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point2D/Point2dMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point2D/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point2D/Point3DMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/PointMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Cylinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +51,9 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Point3DMain">
-    <configuration name="CirleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Circle.CirleMain" />
+  <component name="RunManager" selected="Application.MoveablePointMain">
+    <configuration name="CylinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Circle.CylinderMain" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
@@ -68,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CylinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Circle.CylinderMain" />
+    <configuration name="MoveablePointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.MoveablePointMain" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_Inheritance.Circle.*" />
+          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss5_AM_StaticMethod.Student.Test" />
+    <configuration name="PointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.PointMain" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss5_AM_StaticMethod.Student.*" />
+          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MoveablePointMain" />
+        <item itemvalue="Application.PointMain" />
+        <item itemvalue="Application.CylinderMain" />
         <item itemvalue="Application.Point3DMain" />
         <item itemvalue="Application.Point2dMain" />
-        <item itemvalue="Application.CirleMain" />
-        <item itemvalue="Application.CylinderMain" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +149,7 @@
       <workItem from="1677036116658" duration="9121000" />
       <workItem from="1677051173571" duration="5926000" />
       <workItem from="1677122488969" duration="9900000" />
-      <workItem from="1677155822939" duration="1396000" />
+      <workItem from="1677155822939" duration="4874000" />
     </task>
     <servers />
   </component>
