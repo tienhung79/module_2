@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/iResize.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MoveablePointMain">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CylinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Circle.CylinderMain" />
       <module name="Module 2" />
@@ -62,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveablePointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.MoveablePointMain" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Main" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
+          <option name="PATTERN" value="ss7_Abstract_Interface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Point2dMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point2D.Point2dMain" />
+    <configuration name="MoveablePointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.MoveablePointMain" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_Inheritance.Point2D.*" />
+          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.MoveablePointMain" />
         <item itemvalue="Application.PointMain" />
         <item itemvalue="Application.CylinderMain" />
         <item itemvalue="Application.Point3DMain" />
-        <item itemvalue="Application.Point2dMain" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +151,7 @@
       <workItem from="1677051173571" duration="5926000" />
       <workItem from="1677122488969" duration="9900000" />
       <workItem from="1677155822939" duration="4874000" />
-      <workItem from="1677200875995" duration="3288000" />
+      <workItem from="1677200875995" duration="8686000" />
     </task>
     <servers />
   </component>
