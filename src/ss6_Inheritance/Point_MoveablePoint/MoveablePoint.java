@@ -46,6 +46,11 @@ public class MoveablePoint extends Point {
         float[] array = {getxSpeed(),getySpeed()};
         return Arrays.toString(array);
     }
+    public MoveablePoint move() {
+        setX(xSpeed+getX());
+        setY(ySpeed+getY());
+        return this;
+    }
 
     @Override
     public String toString() {

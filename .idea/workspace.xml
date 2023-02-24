@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/PointMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Circle/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,20 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C1222G1-NgoTienHung/Module 1/case_study/task1_bai2.html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/C1222G1-NgoTienHung/Module 1/ss14+ss15_ham/LT2_bao 9.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.MoveablePointMain">
     <configuration name="CylinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Circle.CylinderMain" />
@@ -150,6 +147,7 @@
       <workItem from="1677051173571" duration="5926000" />
       <workItem from="1677122488969" duration="9900000" />
       <workItem from="1677155822939" duration="4874000" />
+      <workItem from="1677200875995" duration="3288000" />
     </task>
     <servers />
   </component>
@@ -163,6 +161,11 @@
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
