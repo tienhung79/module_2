@@ -8,7 +8,9 @@ public class Student {
 
     }
 
-
+    public String getClasses() {
+        return this.classes;
+    }
 
     public void setName(String name) {
         this.name = name;
