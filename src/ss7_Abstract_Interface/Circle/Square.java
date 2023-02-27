@@ -1,6 +1,8 @@
-package ss7_Abstract_Interface;
+package ss7_Abstract_Interface.Circle;
 
-public class Square implements iResize{
+import ss7_Abstract_Interface.Circle.iResize;
+
+public class Square implements iResize {
     private double side;
     public  Square(){
 

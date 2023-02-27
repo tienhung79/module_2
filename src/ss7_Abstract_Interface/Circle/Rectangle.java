@@ -1,4 +1,6 @@
-package ss7_Abstract_Interface;
+package ss7_Abstract_Interface.Circle;
+
+import ss7_Abstract_Interface.Circle.iResize;
 
 public class Rectangle implements iResize {
     private double weight;

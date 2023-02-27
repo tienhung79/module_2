@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/Squares.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/iColorable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_AM_StaticMethod/Student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_AM_StaticMethod/Student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/iResize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Circle/iResize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +66,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Main" />
+      <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Circle.Main" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss7_Abstract_Interface.*" />
+          <option name="PATTERN" value="ss7_Abstract_Interface.Circle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,7 +152,7 @@
       <workItem from="1677155822939" duration="4874000" />
       <workItem from="1677200875995" duration="8686000" />
       <workItem from="1677289040495" duration="3371000" />
-      <workItem from="1677460141633" duration="2160000" />
+      <workItem from="1677460141633" duration="2472000" />
     </task>
     <servers />
   </component>

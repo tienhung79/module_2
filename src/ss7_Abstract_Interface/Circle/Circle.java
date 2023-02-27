@@ -1,4 +1,4 @@
-package ss7_Abstract_Interface;
+package ss7_Abstract_Interface.Circle;
 
 public class Circle implements iResize {
     private double radius;
