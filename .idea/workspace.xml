@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/AbstractClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Sum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/Students.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/Teachers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/Squares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/Squares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/SquaresMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/SquaresMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/iColorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_Abstract_Interface/Colorable/iColorable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +37,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C1222G1-NgoTienHung/Module 1/ss16_ss17_OOP/adam_eva.html&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/C1222G1-NgoTienHung/Module 1/ss10+ss11_vong_lap/so_nguyen_to.html",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.ss7_Abstract_Interface.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Circle.Main" />
@@ -154,7 +152,8 @@
       <workItem from="1677155822939" duration="4874000" />
       <workItem from="1677200875995" duration="8686000" />
       <workItem from="1677289040495" duration="3371000" />
-      <workItem from="1677460141633" duration="8323000" />
+      <workItem from="1677460141633" duration="13601000" />
+      <workItem from="1677504289340" duration="1216000" />
     </task>
     <servers />
   </component>
