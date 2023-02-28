@@ -1,4 +1,4 @@
-package Student_Management_Program;
+package Student_Management_Program.model;
 
 public class Students extends People {
     private int classes;
@@ -8,8 +8,8 @@ public class Students extends People {
 
     }
 
-    public Students(int code, String name, int date, String gender, int classes, int point) {
-        super(code, name, date, gender);
+    public Students(int id, String name, int date, String gender, int classes, int point) {
+        super(id, name, date, gender);
         this.classes = classes;
         this.point = point;
     }

@@ -1,7 +1,7 @@
-package Student_Management_Program;
+package Student_Management_Program.model;
 
 public abstract class People {
-    private int code;
+    private int id;
     private String name;
     private int date;
     private String gender;
@@ -9,19 +9,19 @@ public abstract class People {
 
     }
 
-    public People(int code, String name, int date, String gender) {
-        this.code = code;
+    public People(int id, String name, int date, String gender) {
+        this.id = id;
         this.name = name;
         this.date = date;
         this.gender = gender;
     }
 
-    public int getCode() {
-        return code;
+    public int getId() {
+        return id;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

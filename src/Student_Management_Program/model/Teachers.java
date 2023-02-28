@@ -1,10 +1,10 @@
-package Student_Management_Program;
+package Student_Management_Program.model;
 
 public class Teachers extends People {
     private String level;
     public Teachers(){}
-    public Teachers(int code, String name, int date, String gender, String level) {
-        super(code, name, date, gender);
+    public Teachers(int id, String name, int date, String gender, String level) {
+        super(id, name, date, gender);
         this.level=level;
     }
 
