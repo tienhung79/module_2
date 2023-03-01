@@ -1,5 +1,9 @@
 package Student_Management_Program.repository;
 
-public interface IStudentRepository {
+import Student_Management_Program.model.Students;
 
+import java.util.List;
+
+public interface IStudentRepository {
+        List<Students> getAll();
 }

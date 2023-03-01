@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThuatToan.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss8_clean_code/TennisGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss8_clean_code/TennisGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/controller/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ss7_Abstract_Interface.Main">
+  <component name="RunManager" selected="Application.Student_Management_Program.view.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Circle.Main" />
       <module name="Module 2" />
@@ -69,38 +71,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MoveablePointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.MoveablePointMain" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_Inheritance.Point_MoveablePoint.PointMain" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss6_Inheritance.Point_MoveablePoint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SquaresMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_Abstract_Interface.Colorable.SquaresMain" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss7_Abstract_Interface.Colorable.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student_Management_Program.controller.StudentController" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Student_Management_Program.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Student_Management_Program.view.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student_Management_Program.view.Main" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Student_Management_Program.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Student_Management_Program.view.Main" />
+        <item itemvalue="Application.StudentController" />
         <item itemvalue="Application.ss7_Abstract_Interface.Main" />
         <item itemvalue="Application.SquaresMain" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MoveablePointMain" />
-        <item itemvalue="Application.PointMain" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +161,8 @@
       <workItem from="1677460141633" duration="13601000" />
       <workItem from="1677504289340" duration="1216000" />
       <workItem from="1677554778133" duration="6077000" />
+      <workItem from="1677593305697" duration="12628000" />
+      <workItem from="1677608833956" duration="663000" />
     </task>
     <servers />
   </component>

@@ -3,13 +3,13 @@ package Student_Management_Program.model;
 public abstract class People {
     private int id;
     private String name;
-    private int date;
-    private String gender;
+    private String date;
+    private Boolean gender;
     public People(){
 
     }
 
-    public People(int id, String name, int date, String gender) {
+    public People(int id, String name, String date, Boolean gender) {
         this.id = id;
         this.name = name;
         this.date = date;
@@ -32,20 +32,29 @@ public abstract class People {
         this.name = name;
     }
 
-    public int getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public String getGender() {
+    public Boolean getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Boolean gender) {
         this.gender = gender;
     }
 
+    @Override
+    public String toString() {
+        return "People{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", date=" + date +
+                ", gender='" + gender + '\'' +
+                '}';
+    }
 }
