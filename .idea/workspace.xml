@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/IStudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/view/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/controller/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/People.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Students.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/service/IStudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/IStudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +159,7 @@
       <workItem from="1677554778133" duration="6077000" />
       <workItem from="1677593305697" duration="12628000" />
       <workItem from="1677608833956" duration="663000" />
+      <workItem from="1677632492357" duration="7104000" />
     </task>
     <servers />
   </component>

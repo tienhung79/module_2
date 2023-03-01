@@ -25,6 +25,7 @@ public class StudentController {
                     iStudentService.creatStudent();
                     break;
                 case 2:
+                    iStudentService.deleteStudent();
                     break;
                 case 3:
                     iStudentService.display();

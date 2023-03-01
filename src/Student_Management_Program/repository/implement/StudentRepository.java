@@ -10,14 +10,18 @@ import java.util.List;
 public class StudentRepository implements IStudentRepository {
     private static List<Students> studenstList = new ArrayList<>();
  static {
-     studenstList.add(new Students(123,"Hưng","07/09/2000",true,"c1222g1",8));
-     studenstList.add(new Students(123,"Hoàng","07/09/2000",true,"c1222g1",8));
-     studenstList.add(new Students(123,"Huy","07/09/2000",true,"c1222g1",8));
-     studenstList.add()
+     studenstList.add(new Students(456,"Hưng","07/09/2000",true,"c1222g1",8));
+     studenstList.add(new Students(455,"Hoàng","07/09/2000",true,"c1222g1",8));
+     studenstList.add(new Students(113,"Huy","07/09/2000",true,"c1222g1",8));
  }
     @Override
     public List<Students> getAll() {
             return studenstList;
+    }
+
+    @Override
+    public void addStudent(Students student) {
+        studenstList.add(student);
     }
 
 

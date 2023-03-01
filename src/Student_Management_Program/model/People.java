@@ -50,7 +50,7 @@ public abstract class People {
 
     @Override
     public String toString() {
-        return "People{" +
+        return
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", date=" + date +

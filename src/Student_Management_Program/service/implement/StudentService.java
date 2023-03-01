@@ -30,16 +30,48 @@ public class StudentService implements IStudentService {
     @Override
     public void creatStudent() {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Nhập id:");
+        int id = Integer.parseInt(sc.nextLine());
         System.out.print("Nhập tên:");
-        iStudentRepository.
         String name = sc.nextLine();
         System.out.print("Nhập ngày sinh:");
         String date = sc.nextLine();
         System.out.print("Nhập giới tính:");
+        String tempGender = sc.nextLine();
         Boolean gender;
-        if ( )
+        if (tempGender=="Nam" ){
+            gender=true;
+        }else if (tempGender=="Nữ")
+        {
+            gender =false;
+        }else {
+            gender =null;
+        }
         System.out.print("Nhập lớp:");
+        String classes = sc.nextLine();
         System.out.print("Nhập điểm:");
+        int point = Integer.parseInt(sc.nextLine());
+        Students student = new Students(id,name,date,gender,classes,point);
+        iStudentRepository.addStudent(student);
 
+    }
+
+    @Override
+    public void deleteStudent() {
+        Scanner sc = new Scanner(System.in);
+        List<Students> list = iStudentRepository.getAll();
+        System.out.println("Nhập id muốn xóa:");
+        int id = Integer.parseInt(sc.nextLine());
+        for (int i = 0; i < list.size(); i++) {
+            if (id==list.get(i).getId()){
+                System.out.println("bạn có muốn xóa không?"+"yes/no");
+                String decide = sc.nextLine();
+                if (decide.equals("yes")){
+                    list.remove(i);
+                }else {
+                    System.out.println("khỏi xóa");
+                }
+            }
+        }
     }
 }
