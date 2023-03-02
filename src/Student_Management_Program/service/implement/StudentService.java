@@ -64,13 +64,17 @@ public class StudentService implements IStudentService {
         int id = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < list.size(); i++) {
             if (id==list.get(i).getId()){
-                System.out.println("bạn có muốn xóa không?"+"yes/no");
-                String decide = sc.nextLine();
-                if (decide.equals("yes")){
-                    list.remove(i);
-                }else {
+                System.out.println("bạn có muốn xóa không?");
+                System.out.println("1: có ");
+                System.out.println("2: không ");
+                int decide = Integer.parseInt(sc.nextLine());
+                if (decide==1){
+                    iStudentRepository.delete(i);
+                }else if (decide==2){
                     System.out.println("khỏi xóa");
                 }
+            }else {
+                System.out.println("Không tìm thấy");
             }
         }
     }

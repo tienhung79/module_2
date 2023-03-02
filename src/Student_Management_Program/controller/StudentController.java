@@ -10,7 +10,7 @@ public class StudentController {
     Scanner sc = new Scanner(System.in);
 
     public void menuStudent() {
-        int choice;
+        String choice;
         IStudentService iStudentService = new StudentService();
         do {
             System.out.println("--------------------------------------------");
@@ -19,22 +19,22 @@ public class StudentController {
             System.out.println("3: Xem danh sách giảng viên hoặc học sinh");
             System.out.println("4: Thoát");
             System.out.print("Mời bạn nhập:");
-            choice = Integer.parseInt(sc.nextLine());
+            choice = sc.nextLine();
             switch (choice) {
-                case 1:
+                case "1":
                     iStudentService.creatStudent();
                     break;
-                case 2:
+                case "2":
                     iStudentService.deleteStudent();
                     break;
-                case 3:
+                case "3":
                     iStudentService.display();
                     break;
-                case 4:
+                case "4":
                     break;
 
             }
-        } while (choice >= 1 && choice <= 4);
+        } while (!choice.equals("4"));
 
 
     }

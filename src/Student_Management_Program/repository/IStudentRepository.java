@@ -8,4 +8,6 @@ public interface IStudentRepository {
         List<Students> getAll();
 
         void addStudent(Students student);
+
+        void delete(int id);
 }

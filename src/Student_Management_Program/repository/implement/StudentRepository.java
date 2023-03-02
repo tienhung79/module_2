@@ -24,5 +24,10 @@ public class StudentRepository implements IStudentRepository {
         studenstList.add(student);
     }
 
+    @Override
+    public void delete(int id) {
+        studenstList.remove(id);
+    }
+
 
 }
