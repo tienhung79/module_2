@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/CountElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/PalindromeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/TeacherRespsitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/CheckStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/model/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/IStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/ITeacherRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/ITeacherRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/repository/implement/TeacherRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/service/ITeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/ITeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/service/implement/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student_Management_Program/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student_Management_Program/view/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThuatToan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThuatToan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/PalindromeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/PalindromeString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -39,7 +55,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/C1222G1-NgoTienHung/Module 1/ss10+ss11_vong_lap/so_nguyen_to.html&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/C1222G1-NgoTienHung/Module 2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -47,13 +63,39 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PalindromeString">
+  <component name="RunManager" selected="Application.Convert">
+    <configuration name="CheckStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.CheckStack" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss10_Stack_queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.Convert" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss10_Stack_queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Student_Management_Program.view.Main" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Student_Management_Program.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,32 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.Reverse.ReverseElement" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss10_Stack_queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Student_Management_Program.view.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Student_Management_Program.view.Main" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Student_Management_Program.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ThuatToan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ThuatToan" />
       <module name="Module 2" />
@@ -109,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PalindromeString" />
         <item itemvalue="Application.Convert" />
-        <item itemvalue="Application.ReverseElement" />
+        <item itemvalue="Application.PalindromeString" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CheckStack" />
         <item itemvalue="Application.ThuatToan" />
-        <item itemvalue="Application.Student_Management_Program.view.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +165,9 @@
       <workItem from="1677608833956" duration="663000" />
       <workItem from="1677632492357" duration="19988000" />
       <workItem from="1677714300909" duration="1811000" />
-      <workItem from="1677719090381" duration="5652000" />
+      <workItem from="1677719090381" duration="8382000" />
+      <workItem from="1677742878664" duration="8909000" />
+      <workItem from="1677760983710" duration="4491000" />
     </task>
     <servers />
   </component>

@@ -70,12 +70,12 @@ public class StudentService implements IStudentService {
                 int decide = Integer.parseInt(sc.nextLine());
                 if (decide==1){
                     iStudentRepository.delete(i);
+                    System.out.println("xóa thành công");
                 }else if (decide==2){
                     System.out.println("khỏi xóa");
                 }
-            }else {
-                System.out.println("Không tìm thấy");
+                return;
             }
-        }
+        }System.out.println("Không tìm thấy");
     }
 }

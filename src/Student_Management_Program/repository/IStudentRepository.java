@@ -9,5 +9,6 @@ public interface IStudentRepository {
 
         void addStudent(Students student);
 
-        void delete(int id);
+
+        void delete(int i);
 }

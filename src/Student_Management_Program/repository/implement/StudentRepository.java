@@ -2,7 +2,6 @@ package Student_Management_Program.repository.implement;
 
 import Student_Management_Program.model.Students;
 import Student_Management_Program.repository.IStudentRepository;
-import Student_Management_Program.service.implement.StudentService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,8 +24,8 @@ public class StudentRepository implements IStudentRepository {
     }
 
     @Override
-    public void delete(int id) {
-        studenstList.remove(id);
+    public void delete(int i) {
+        studenstList.remove(i);
     }
 
 

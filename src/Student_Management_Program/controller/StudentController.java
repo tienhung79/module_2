@@ -15,8 +15,8 @@ public class StudentController {
         do {
             System.out.println("--------------------------------------------");
             System.out.println("1: Thêm mới chức năng");
-            System.out.println("2: Xóa giảng viên hoặc học sinh ");
-            System.out.println("3: Xem danh sách giảng viên hoặc học sinh");
+            System.out.println("2: Xóa học sinh ");
+            System.out.println("3: Xem danh sách học sinh");
             System.out.println("4: Thoát");
             System.out.print("Mời bạn nhập:");
             choice = sc.nextLine();
@@ -31,6 +31,7 @@ public class StudentController {
                     iStudentService.display();
                     break;
                 case "4":
+                    System.out.println("Đã dừng chương trình");
                     break;
 
             }
