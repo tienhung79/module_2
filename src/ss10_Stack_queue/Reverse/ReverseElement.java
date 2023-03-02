@@ -17,11 +17,11 @@ public class ReverseElement {
             stack.push(mNumber);
         }
         System.out.println(stack);
-        System.out.println(array);
+        System.out.println(Arrays.toString(array));
         for (int i = 0; i < array.length; i++) {
             array[i]= stack.pop();
         }
-        System.out.println(stack);
+        System.out.println(Arrays.toString(array));
 
     }
 }
