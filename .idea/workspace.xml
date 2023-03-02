@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/CountElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/Cover/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/Convert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/Reverse/ReverseElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/Reverse/ReverseElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss10_Stack_queue/CountElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/PalindromeString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CountElement">
+  <component name="RunManager" selected="Application.PalindromeString">
     <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.Convert" />
       <module name="Module 2" />
@@ -64,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.CountElement" />
+    <configuration name="PalindromeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.PalindromeString" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
@@ -112,7 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountElement" />
+        <item itemvalue="Application.PalindromeString" />
         <item itemvalue="Application.Convert" />
         <item itemvalue="Application.ReverseElement" />
         <item itemvalue="Application.ThuatToan" />
@@ -152,7 +149,7 @@
       <workItem from="1677608833956" duration="663000" />
       <workItem from="1677632492357" duration="19988000" />
       <workItem from="1677714300909" duration="1811000" />
-      <workItem from="1677719090381" duration="5350000" />
+      <workItem from="1677719090381" duration="5652000" />
     </task>
     <servers />
   </component>
