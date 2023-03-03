@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss10_Stack_queue/CountOfChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/model/Produce.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/IProductReopository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/product_manager/view/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,20 +54,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CountOfChar">
-    <configuration name="CheckStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.CheckStack" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss10_Stack_queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.main">
     <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.Convert" />
       <module name="Module 2" />
@@ -114,13 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="product_manager.view.main" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="product_manager.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main" />
         <item itemvalue="Application.CountOfChar" />
         <item itemvalue="Application.Convert" />
         <item itemvalue="Application.PalindromeString" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CheckStack" />
       </list>
     </recent_temporary>
   </component>
@@ -160,6 +166,8 @@
       <workItem from="1677742878664" duration="8909000" />
       <workItem from="1677760983710" duration="5139000" />
       <workItem from="1677799909701" duration="1856000" />
+      <workItem from="1677811302002" duration="16198000" />
+      <workItem from="1677849448121" duration="4838000" />
     </task>
     <servers />
   </component>
