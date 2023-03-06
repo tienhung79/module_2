@@ -27,7 +27,7 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void disPlay() {
+    public boolean disPlay() {
         List<Produce> list = productReopository.getALL();
         if (list.size() == 0) {
             System.out.println("không có danh sách");
@@ -37,11 +37,11 @@ public class ProductService implements IProductService {
             for (int i = 0; i < list.size(); i++) {
                 if (list.get(i).getId() == id) {
                     productReopository.disPlay(i);
-                    return;
                 }
-            }
-            System.out.println("Không tìm thấy id muốn tìm");
+            }return true;
         }
+        System.out.println("Không tìm thấy id muốn tìm");
+        return false;
     }
 
     @Override
@@ -86,7 +86,7 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void disPlayProduct() {
+    public boolean disPlayProduct() {
         List<Produce> list = productReopository.getALL();
         if (list.size() == 0) {
             System.out.println("không có sản phẩm");
@@ -97,11 +97,11 @@ public class ProductService implements IProductService {
                 if (list.get(i).getId() == id) {
                     System.out.println();
                     productReopository.disPlayProduct(i);
-                    return;
                 }
-            }
-            System.out.println("Không tìm thấy sản phẩm có id này");
+            }return true;
         }
+        System.out.println("không tìm thấy");
+        return false;
     }
 
     @Override
@@ -119,11 +119,11 @@ public class ProductService implements IProductService {
                     Collections.sort(list, new Comparator<Produce>() {
                         @Override
                         public int compare(Produce o1, Produce o2) {
-                            return  o1.getPrice()-o2.getPrice();
+                            return o1.getPrice() - o2.getPrice();
                         }
                     });
-                    for (Produce temp: list
-                         ) {
+                    for (Produce temp : list
+                    ) {
                         System.out.println(temp);
                     }
                     System.out.println("đã sắp xếp xong");
@@ -132,11 +132,11 @@ public class ProductService implements IProductService {
                     Collections.sort(list, new Comparator<Produce>() {
                         @Override
                         public int compare(Produce o1, Produce o2) {
-                            return o2.getPrice()-o1.getPrice();
+                            return o2.getPrice() - o1.getPrice();
                         }
                     });
-                    for (Produce temp: list
-                         ) {
+                    for (Produce temp : list
+                    ) {
                         System.out.println(temp);
                     }
                     System.out.println("đã sắp xếp xong");

@@ -2,33 +2,26 @@ import java.util.Scanner;
 
 public class ThuatToan {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập vị trí phần tử bạn muốn lấy");
-        int number = Integer.parseInt(sc.nextLine());
-        int[] array = {7,1,2,0,8};
-        int sum1 = 0;
-        int sum2 ;
-        int sum =0;
-        for (int i = 0; i < array.length; i++) {
-            sum+=array[i];
-        }for (int i = 0; i < array.length; i++) {
-            sum1+=array[i];
-        }
-        System.out.println(sum);
-        for (int i = 0; i < array.length; i++) {
-            if (i == number) {
-                for (int j = number; j < array.length; j++) {
-                    sum1 -= array[j];
-                }
+        System.out.println("Linear Equation Resolver");
+        System.out.println("Given a equation as 'a * x + b = c', please enter constants:");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("a: ");
+        double a = scanner.nextDouble();
+
+        System.out.print("b: ");
+        double b = scanner.nextDouble();
+
+        System.out.print("c: ");
+        double c = scanner.nextDouble();
+        if (a != 0) {
+            double answer = (c - b) / a;
+            System.out.println("Equation pass with x = "+ answer);
+        } else {
+            if (b == c) {
+                System.out.print("The solution is all x!");
+            } else {
+                System.out.print("No solution!");
             }
-        }
-        System.out.println(sum1);
-        sum2=sum-sum1-array[number];
-        System.out.println(sum2);
-        if (sum1==sum2){
-            System.out.println("Mảng đẹp");
-        }else {
-            System.out.println("Mảng không đẹp");
         }
     }
 }

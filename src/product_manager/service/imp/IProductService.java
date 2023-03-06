@@ -3,13 +3,13 @@ package product_manager.service.imp;
 public interface IProductService {
     void addProduct();
 
-    void disPlay();
+    boolean disPlay();
 
     void repairProduct();
 
     void deleteProduct();
 
-    void disPlayProduct();
+    boolean disPlayProduct();
 
     void docking();
 }

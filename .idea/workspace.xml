@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="" />
+    <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss14_sort/IllustrationSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss14_sort/Sorrt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThuatToan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThuatToan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss1_Introdution_to_Java/Bai2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_Introdution_to_Java/Bai2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +56,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Search">
+  <component name="RunManager" selected="Application.Sorrt">
+    <configuration name="Bai2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_Introdution_to_Java.Bai2" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss1_Introdution_to_Java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CountOfChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.CountOfChar" />
       <module name="Module 2" />
@@ -61,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaxString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.FindMaxString" />
+    <configuration name="IllustrationSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss14_sort.IllustrationSort" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.*" />
+          <option name="PATTERN" value="ss14_sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,25 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaxStringIncreas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.MaxStringIncreas" />
+    <configuration name="Sorrt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss14_sort.Sorrt" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Search" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.Search" />
-      <module name="Module 2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.*" />
+          <option name="PATTERN" value="ss14_sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,9 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Search" />
-        <item itemvalue="Application.FindMaxString" />
-        <item itemvalue="Application.MaxStringIncreas" />
+        <item itemvalue="Application.Sorrt" />
+        <item itemvalue="Application.IllustrationSort" />
+        <item itemvalue="Application.Bai2" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.CountOfChar" />
       </list>
@@ -162,7 +171,8 @@
       <workItem from="1677811302002" duration="16198000" />
       <workItem from="1677849448121" duration="4838000" />
       <workItem from="1677912537907" duration="2167000" />
-      <workItem from="1678064645433" duration="2690000" />
+      <workItem from="1678064645433" duration="10714000" />
+      <workItem from="1678112543535" duration="1073000" />
     </task>
     <servers />
   </component>
