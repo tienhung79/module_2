@@ -15,9 +15,10 @@ public class Search {
             }
         }
         System.out.println(Arrays.toString(array));
+        System.out.println( binarySearch(array,0,array.length-1,4));
     }
 
-    public int binarySearch(int[] array, int left, int right, int value) {
+    static int binarySearch(int[] array, int left, int right, int value) {
         int middle = (right + left) / 2;
         if (right >= left) {
             if (array[middle] == value) {
