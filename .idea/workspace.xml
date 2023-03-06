@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/product_manager/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/model/Produce.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/IProductReopository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/view/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/FindMaxString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/MaxStringIncreas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +30,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LnxQVpFynuKhUOeEwggBqXbxL1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +51,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.main">
+  <component name="RunManager" selected="Application.FindMaxString">
     <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.Convert" />
       <module name="Module 2" />
@@ -81,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Student_Management_Program.view.Main" />
+    <configuration name="FindMaxString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.FindMaxString" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Student_Management_Program.view.*" />
+          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromeString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss10_Stack_queue.PalindromeString" />
+    <configuration name="MaxStringIncreas" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss13_thuat_toan_tim_kiem.MaxStringIncreas" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss10_Stack_queue.*" />
+          <option name="PATTERN" value="ss13_thuat_toan_tim_kiem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindMaxString" />
+        <item itemvalue="Application.MaxStringIncreas" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.CountOfChar" />
         <item itemvalue="Application.Convert" />
-        <item itemvalue="Application.PalindromeString" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +165,8 @@
       <workItem from="1677799909701" duration="1856000" />
       <workItem from="1677811302002" duration="16198000" />
       <workItem from="1677849448121" duration="4838000" />
+      <workItem from="1677912537907" duration="2167000" />
+      <workItem from="1678064645433" duration="330000" />
     </task>
     <servers />
   </component>
