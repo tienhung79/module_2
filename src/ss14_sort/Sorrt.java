@@ -21,6 +21,7 @@ public class Sorrt {
             int pos = arr[i];
             int j;
             for (j = i - 1; j >= 0 && arr[j] > pos; j--) {
+                System.out.println("đổi "+arr[j+1] +"" +"bằng "+ arr[j]);
                 arr[j + 1] = arr[j];
             }
             arr[j + 1] = pos;

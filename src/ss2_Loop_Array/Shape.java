@@ -12,25 +12,25 @@ public class Shape {
         for (int i=0;i<a;i++){
             for (int j=0;j<b;j++ ){
                 System.out.print('*');
-            }
-            System.out.println("");
+
+            }System.out.println("");
         }
 
-        System.out.println("Nhập chiều cao của tam giác");
-        int h= sc.nextInt();
-        for (int k=0;k<h;k++) {
-            for (int g = 0; g < k; g++) {
-                System.out.print('*');
-            }
-            System.out.println(" ");
-
-        }
-        for (int l=0;l<h;l++){
-            for (int g=h;g>l;g--){
-                System.out.print('*');
-            }
-            System.out.println(" ");
-        }
+//        System.out.println("Nhập chiều cao của tam giác");
+//        int h= sc.nextInt();
+//        for (int k=0;k<h;k++) {
+//            for (int g = 0; g < k; g++) {
+//                System.out.print('*');
+//            }
+//            System.out.println(" ");
+//
+//        }
+//        for (int l=0;l<h;l++){
+//            for (int g=h;g>l;g--){
+//                System.out.print('*');
+//            }
+//            System.out.println(" ");
+//        }
 
     }
 }
