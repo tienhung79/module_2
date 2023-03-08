@@ -13,14 +13,14 @@ public class IllegalTriangleException {
         int c = Integer.parseInt(sc.nextLine());
         try {
             if (a < 0 || b < 0 || c < 0) {
-                throw new Exception();
+                throw new IllegalAccessException();
             }
         } catch (Exception e) {
             System.out.println("cả a,b,c phải lớn hơn 0 ");
         }
         try {
             if (a+b<c||b+c<a||a+c<b){
-                throw new Exception();
+                throw new IllegalAccessException();
             }
         } catch (Exception e) {
             System.out.println("Tổng hai cạnh phải lớn hơn cạnh còn lại");
