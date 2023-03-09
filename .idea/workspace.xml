@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss15_exception/TriangleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/ListCountry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/Name2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/ReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThuatToan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ThuatToan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss16_IOTextFile/CopyFileText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/CopyFileText.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.IllegalTriangleException">
+  <component name="RunManager" selected="Application.ReadFile">
     <configuration name="CopyFileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss16_IOTextFile.CopyFileText" />
       <module name="Module 2" />
@@ -78,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Shape" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_Loop_Array.Shape" />
+    <configuration name="ReadFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_IOTextFile.ReadFile" />
       <module name="Module 2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_Loop_Array.*" />
+          <option name="PATTERN" value="ss16_IOTextFile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadFile" />
+        <item itemvalue="Application.CopyFileText" />
         <item itemvalue="Application.IllegalTriangleException" />
         <item itemvalue="Application.ThuatToan" />
-        <item itemvalue="Application.CopyFileText" />
         <item itemvalue="Application.Sorrt" />
-        <item itemvalue="Application.Shape" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +166,8 @@
       <workItem from="1678112543535" duration="2108000" />
       <workItem from="1678160330416" duration="7995000" />
       <workItem from="1678192323936" duration="1228000" />
-      <workItem from="1678245034895" duration="13365000" />
+      <workItem from="1678245034895" duration="14639000" />
+      <workItem from="1678331565627" duration="3458000" />
     </task>
     <servers />
   </component>
@@ -182,11 +185,6 @@
           <url>file://$PROJECT_DIR$/src/ss6_Inheritance/Point_MoveablePoint/MoveablePointMain.java</url>
           <line>2</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ss16_IOTextFile/CopyFileText.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

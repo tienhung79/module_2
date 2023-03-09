@@ -14,8 +14,10 @@ public class CopyFileText {
             System.out.println("Nhap phan tu thu: " + i);
             array[i] = Integer.parseInt(sc.nextLine());
         }
-        FileWriter fileWriter;
-        BufferedWriter bufferedWriter;
+        Character a ='a';
+        FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter=null;
+
         try {
             fileWriter = new FileWriter("src/ss16_IOTextFile/Name.csv");
             bufferedWriter = new BufferedWriter(fileWriter);
@@ -23,11 +25,21 @@ public class CopyFileText {
             ) {
                 bufferedWriter.write(temp.toString());
                 bufferedWriter.newLine();
+
             }
-            bufferedWriter.close();
-            fileWriter.close();
         } catch (IOException e) {
            e.printStackTrace();
+        }finally {
+            try {
+                bufferedWriter.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                fileWriter.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
