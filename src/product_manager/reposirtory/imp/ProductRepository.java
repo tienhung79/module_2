@@ -1,8 +1,10 @@
 package product_manager.reposirtory.imp;
 
+import product_manager.common.ReadWrite;
 import product_manager.model.Produce;
 import product_manager.reposirtory.IProductReopository;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,7 @@ public class ProductRepository implements IProductReopository {
 
     @Override
     public List<Produce> getALL() {
-        return produceList;
+        return ReadWrite.readWrite("src/product_manager/data/data_list.csv");
     }
 
     @Override

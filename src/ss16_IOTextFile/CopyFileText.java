@@ -1,47 +1,50 @@
 package ss16_IOTextFile;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class CopyFileText {
-    public static void main(String[] args)  {
-        Scanner sc = new Scanner(System.in);
-        int[] array = new int[5];
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Nhap phan tu thu: " + i);
-            array[i] = Integer.parseInt(sc.nextLine());
-        }
-        Character a ='a';
+    public static void main(String[] args) {
         FileWriter fileWriter = null;
-        BufferedWriter bufferedWriter=null;
-
+        FileReader fileReader = null;
+        BufferedReader reader = null;
+        BufferedWriter writer = null;
+        String str;
         try {
-            fileWriter = new FileWriter("src/ss16_IOTextFile/Name.csv");
-            bufferedWriter = new BufferedWriter(fileWriter);
-            for (Integer temp : array
-            ) {
-                bufferedWriter.write(temp.toString());
-                bufferedWriter.newLine();
+            fileReader = new FileReader("src/ss16_IOTextFile/source.csv");
+            fileWriter = new FileWriter("src/ss16_IOTextFile/target.csv", true);
+            reader = new BufferedReader(fileReader);
+            writer = new BufferedWriter(fileWriter);
+            String line;
+            while ((line = reader.readLine()) != null) {
+                writer.write(line);
+                writer.newLine();
+                str = line;
+                for (int i = 0; i < str.length(); i++) {
+                    if (str.charAt(i) != ' ') {
 
+                    }
+                }
             }
+        } catch (FileNotFoundException e) {
+            System.out.println("file không tồn tại");
+        } catch (NullPointerException e) {
+            System.out.println("file trống");
         } catch (IOException e) {
-           e.printStackTrace();
-        }finally {
+            throw new RuntimeException(e);
+        } finally {
             try {
-                bufferedWriter.close();
+                reader.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
             try {
-                fileWriter.close();
+                writer.close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         }
     }
-
 }
 
