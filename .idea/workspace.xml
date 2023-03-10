@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/product_manager/common/ReadWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/product_manager/data/data_list.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/source.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/target.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/CoppyFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/source.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/target.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/reposirtory/imp/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss16_IOTextFile/CopyFileText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/CopyFileText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss16_IOTextFile/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss16_IOTextFile/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +20,7 @@
       <list>
         <option value="package-info" />
         <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -56,7 +53,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.CopyFileText">
+  <component name="RunManager" selected="Application.CoppyFile">
+    <configuration name="CoppyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss17_io_binaryFile_serialization.CoppyFile" />
+      <module name="Module 2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss17_io_binaryFile_serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CopyFileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss16_IOTextFile.CopyFileText" />
       <module name="Module 2" />
@@ -96,13 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThuatToan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ThuatToan" />
-      <module name="Module 2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="product_manager.view.main" />
       <module name="Module 2" />
@@ -118,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoppyFile" />
         <item itemvalue="Application.CopyFileText" />
         <item itemvalue="Application.main" />
         <item itemvalue="Application.ReadFile" />
         <item itemvalue="Application.IllegalTriangleException" />
-        <item itemvalue="Application.ThuatToan" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +175,7 @@
       <workItem from="1678245034895" duration="14639000" />
       <workItem from="1678331565627" duration="12936000" />
       <workItem from="1678363735139" duration="535000" />
+      <workItem from="1678419288830" duration="2802000" />
     </task>
     <servers />
   </component>
