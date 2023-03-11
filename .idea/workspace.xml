@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6db5429-ed4a-4f0d-94b3-a065f59e3edf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/common/ReadFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/common/WriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/cotrolle/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/data/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/data/data2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/repository/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/repository/Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/service/IService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/product/view/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss18_regex/ValidateNameForClassName.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product_manager/common/ReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/common/ReadWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product_manager/data/data_list.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/data/data_list.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/service/imp/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/product_manager/service/imp/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/CoppyFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/CoppyFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/target.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss17_io_binaryFile_serialization/target.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +175,7 @@
       <workItem from="1678363735139" duration="535000" />
       <workItem from="1678419288830" duration="6419000" />
       <workItem from="1678443014632" duration="166000" />
-      <workItem from="1678502612916" duration="6158000" />
+      <workItem from="1678502612916" duration="7352000" />
     </task>
     <servers />
   </component>
