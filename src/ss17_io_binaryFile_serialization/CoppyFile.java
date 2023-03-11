@@ -35,6 +35,16 @@ public class CoppyFile {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+            try {
+                fileInputStream.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                fileOutputStream.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 

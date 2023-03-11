@@ -27,12 +27,21 @@ public class ProductService implements IProductService {
     }
 
     @Override
-    public void disPlay() {
+    public boolean disPlay() {
         List<Produce> list = productReopository.getALL();
-        for (Produce temp: list
-             ) {
-            System.out.println(temp);
+        if (list.size() == 0) {
+            System.out.println("không có danh sách");
+        } else {
+            System.out.println("Nhập id muốn tìm:");
+            int id = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < list.size(); i++) {
+                if (list.get(i).getId() == id) {
+                    productReopository.disPlay(i);
+                }
+            }return true;
         }
+        System.out.println("Không tìm thấy id muốn tìm");
+        return false;
     }
 
     @Override
