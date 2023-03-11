@@ -33,8 +33,8 @@ public class Service implements  IService{
         System.out.println("Nhập hàng sản xuất:");
         String producer = sc.nextLine();
         System.out.println("Mô tả sản phẩm:");
-        String descrip = sc.nextLine();
-        Product product = new Product(id,name,price,producer,descrip);
+        String describe = sc.nextLine();
+        Product product = new Product(id,name,price,producer,describe);
         list.add(product);
         iRepository.add(list);
     }
@@ -43,6 +43,7 @@ public class Service implements  IService{
     public void find() {
         Scanner sc = new Scanner(System.in);
         List<Product> productList = iRepository.getAll();
+        System.out.println("nhập sản phẩm tìm kiếm");
         String name = sc.nextLine();
         boolean findname = iRepository.findProduct(name);
         if (findname){

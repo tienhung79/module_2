@@ -19,11 +19,11 @@ public class ReadFile {
             objectInputStream = new ObjectInputStream(fileInputStream);
               list = (List<Product>) objectInputStream.readObject();
               fileInputStream.close();
-              objectInputStream.close();
+            objectInputStream.close();
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
-           throw new RuntimeException();
+            WriteFile.writeFile(path,list);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

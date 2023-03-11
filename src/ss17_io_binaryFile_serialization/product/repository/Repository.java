@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Repository implements IRepository{
-    private static List<Product> productList = new ArrayList<>();
+    private static List<Product> productList = ReadFile.read("src/ss17_io_binaryFile_serialization/product/data/data2.txt");
     @Override
     public List<Product> getAll() {
         return ReadFile.read("src/ss17_io_binaryFile_serialization/product/data/data2.txt");
