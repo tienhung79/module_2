@@ -9,13 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Service implements  IService{
-    IRepository iRepository=new Repository();
+public class Service implements IService {
+    IRepository iRepository = new Repository();
+
     @Override
     public void disPlay() {
         List<Product> list = iRepository.getAll();
         for (Product temp : list
-             ) {
+        ) {
             System.out.println(temp);
         }
     }
@@ -34,7 +35,7 @@ public class Service implements  IService{
         String producer = sc.nextLine();
         System.out.println("Mô tả sản phẩm:");
         String describe = sc.nextLine();
-        Product product = new Product(id,name,price,producer,describe);
+        Product product = new Product(id, name, price, producer, describe);
         list.add(product);
         iRepository.add(list);
     }
@@ -45,16 +46,10 @@ public class Service implements  IService{
         List<Product> productList = iRepository.getAll();
         System.out.println("nhập sản phẩm tìm kiếm");
         String name = sc.nextLine();
-        boolean findname = iRepository.findProduct(name);
-        if (findname){
-            for (int i = 0; i < productList.size(); i++) {
-                if (productList.get(i).getName().equals(name)){
-                    System.out.println(productList.get(i));
-                }
-
+        for (int i = 0; i < productList.size(); i++) {
+            if (productList.get(i).getName().equals(name)) {
+               iRepository.displayProduct(i);
             }
         }
     }
-
-
 }

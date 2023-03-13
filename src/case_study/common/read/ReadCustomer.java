@@ -1,5 +1,6 @@
 package case_study.common.read;
 
+import case_study.common.write.WriteCustomer;
 import case_study.model.Customer;
 
 import java.io.BufferedReader;
@@ -30,7 +31,7 @@ public class ReadCustomer {
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            WriteCustomer.writeCustomer(path,customerList);
         }
         return customerList;
     }

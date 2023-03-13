@@ -20,14 +20,8 @@ public class Repository implements IRepository{
     }
 
     @Override
-    public boolean findProduct(String searchName) {
-        for (int i = 0; i < productList.size(); i++) {
-            if (productList.get(i).getName().equals(searchName)) {
-                return true;
-            }
-        }
-        System.out.println("Không có tên");
-        return false;
+    public void displayProduct(int i) {
+        System.out.println(productList.get(i));
     }
 
 

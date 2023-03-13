@@ -10,5 +10,6 @@ public interface IRepository {
 
     void add(List<Product> list);
 
-    boolean findProduct(String searchName);
+
+    void displayProduct(int i);
 }
