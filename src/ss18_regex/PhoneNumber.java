@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 public class PhoneNumber {
-    private static final String REGEX_PHONENUMBER = "^(0{2})+(\\d{9})$";
+    private static final String REGEX_PHONENUMBER = "^[0]{2}+\\d{8}$";
 
     public static boolean validateClassName(String regex) {
         return Pattern.matches(REGEX_PHONENUMBER, regex);
