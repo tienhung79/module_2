@@ -29,7 +29,7 @@ public class ReadHouse {
             fileReader.close();
             bufferedReader.close();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         } catch (IOException e) {
             WriteHouse.writeHouse(path,houseList);
         }

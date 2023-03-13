@@ -44,4 +44,7 @@ public class House extends Facility {
                 ", numberOfFloorsHouse=" + numberOfFloorsHouse + super.toString()+
                 '}';
     }
+    public String toWriteCSV(){
+        return super.toWriteCSV()+standardsRoomHouse+numberOfFloorsHouse;
+    }
 }

@@ -90,4 +90,8 @@ public class Person {
                 ", numberOfPhone=" + numberOfPhone +
                 ", email='" + email + '\'' ;
     }
+//    int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email
+    public String toWriteCSV(){
+        return id+name+dateOfBirth+gender+idCMND+numberOfPhone+email;
+    }
 }

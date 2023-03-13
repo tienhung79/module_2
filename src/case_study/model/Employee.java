@@ -75,4 +75,7 @@ public class Employee extends Person {
                 ", salary=" + salary +super.toString()+
                 '}';
     }
+    public String toWriteCSV(){
+        return super.toWriteCSV()+level+options+salary;
+    }
 }

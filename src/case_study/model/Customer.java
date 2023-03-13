@@ -71,8 +71,7 @@ public class Customer extends Person {
                 ", address='" + address + '\'' + super.toString()+
                 '}';
     }
-//    int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email, String kindOfCustomer, String address
-//    public String writeToCSV(){
-//        return
-//    }
+    public String toWriteCSV(){
+        return super.toWriteCSV()+ kindOfCustomer+address;
+    }
 }

@@ -31,4 +31,7 @@ public class Room extends Facility {
                 "serviceFree='" + serviceFree + '\'' +super.toString()+
                 '}';
     }
+    public String toWriteCSV(){
+        return super.toWriteCSV()+serviceFree;
+    }
 }

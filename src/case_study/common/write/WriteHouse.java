@@ -14,7 +14,11 @@ public class WriteHouse {
         try {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(houseList.toString());
+            for (House temp: houseList
+                 ) {
+                bufferedWriter.write(temp.toWriteCSV());
+                bufferedWriter.newLine();
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -22,12 +26,12 @@ public class WriteHouse {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
             try {
                 bufferedWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
         }
     }

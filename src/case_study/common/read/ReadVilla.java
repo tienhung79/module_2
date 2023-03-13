@@ -1,5 +1,6 @@
 package case_study.common.read;
 
+import case_study.common.write.WriteVilla;
 import case_study.model.Villa;
 
 import javax.swing.*;
@@ -29,9 +30,9 @@ public class ReadVilla {
             fileReader.close();
             bufferedReader.close();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            WriteVilla.writeVilla(path,villaList);
         }
         return villaList;
     }

@@ -30,7 +30,7 @@ public class ReadEmployees {
             bufferedReader.close();
             fileReader.close();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         } catch (IOException e) {
             WriteEmployees.writeEmployees(path,employeeList);
         }

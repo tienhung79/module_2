@@ -14,20 +14,24 @@ public class WriteRoom {
         try {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(roomList.toString());
+            for (Room temp: roomList
+                 ) {
+                bufferedWriter.write(temp.toWriteCSV());
+                bufferedWriter.newLine();
+            }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println(e.getMessage());
         }
         finally {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
             try {
                 bufferedWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
         }
     }

@@ -5,16 +5,21 @@ import case_study.model.Customer;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedList;
 import java.util.List;
 
 public class WriteCustomer {
-    public static void writeCustomer (String path, List<Customer> customerList){
+    public static void writeCustomer (String path, LinkedList<Customer> customerList){
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(customerList.toString());
+            for (Customer temp: customerList
+                 ) {
+                bufferedWriter.write(temp.toWriteCSV());
+                bufferedWriter.newLine();
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -22,12 +27,12 @@ public class WriteCustomer {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
             try {
                 bufferedWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
         }
     }

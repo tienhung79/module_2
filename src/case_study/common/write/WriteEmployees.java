@@ -14,7 +14,11 @@ public class WriteEmployees {
         try {
             fileWriter= new FileWriter(path);
             bufferedWriter=new BufferedWriter(fileWriter);
-            bufferedWriter.write(employeeList.toString());
+            for (Employee temp: employeeList
+                 ) {
+                bufferedWriter.write(temp.toWriteCSV());
+                bufferedWriter.newLine();
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -22,12 +26,12 @@ public class WriteEmployees {
             try {
                 fileWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
             try {
                 bufferedWriter.close();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                System.out.println(e.getMessage());
             }
         }
     }

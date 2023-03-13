@@ -69,4 +69,7 @@ public class Facility {
             ", peopleMax=" + peopleMax +
             ", date='" + date + '\'' ;
   }
+  public String toWriteCSV(){
+    return serviceName+areaUse+price+peopleMax+date;
+  }
 }

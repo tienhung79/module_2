@@ -1,8 +1,12 @@
 package case_study.cotroller;
 
+import case_study.service.IServiceCustomer;
+import case_study.service.imp.ServiceCustomer;
+
 import java.util.Scanner;
 
 public class CustomerController {
+    IServiceCustomer iServiceCustomer = new ServiceCustomer();
     public void displayCustomerMenu() {
         Scanner sc = new Scanner(System.in);
         String choice;
@@ -17,10 +21,13 @@ public class CustomerController {
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
+                    iServiceCustomer.disPlay();
                     break;
                 case "2":
+                    iServiceCustomer.addNew();
                     break;
                 case "3":
+                    iServiceCustomer.edit();
                     break;
                 case "4":
                     new FuramaController().displayMainMenu();
