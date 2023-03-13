@@ -2,7 +2,7 @@ package ss17_io_binaryFile_serialization;
 
 import java.io.*;
 
-public class CoppyFile {
+public class CoppyFile implements Serializable{
     public static void main(String[] args) {
         FileOutputStream fileOutputStream = null;
         FileInputStream fileInputStream = null;
