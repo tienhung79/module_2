@@ -5,7 +5,7 @@ public class Person {
     private int id;
     private String name;
     private String dateOfBirth;
-    private Boolean gender;
+    private String gender;
     private int idCMND;
     private int numberOfPhone;
     private String email;
@@ -13,7 +13,7 @@ public class Person {
     public Person() {
     }
 
-    public Person(int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email) {
+    public Person(int id, String name, String dateOfBirth, String gender, int idCMND, int numberOfPhone, String email) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
@@ -47,11 +47,11 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Boolean getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(Boolean gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
@@ -83,15 +83,18 @@ public class Person {
     public String toString() {
         return
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                ", gender=" + gender +
-                ", idCMND=" + idCMND +
-                ", numberOfPhone=" + numberOfPhone +
-                ", email='" + email + '\'' ;
+                        ", name='" + name + '\'' +
+                        ", dateOfBirth='" + dateOfBirth + '\'' +
+                        ", gender=" + gender +
+                        ", idCMND=" + idCMND +
+                        ", numberOfPhone=" + numberOfPhone +
+                        ", email='" + email + '\'';
     }
-//    int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email
-    public String toWriteCSV(){
-        return id+name+dateOfBirth+gender+idCMND+numberOfPhone+email;
+
+    //    int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email
+    public String toWriteCSV() {
+        return getId() + "," + getName() + "," + getDateOfBirth() + "," + getGender() + "," + getIdCMND() + "," + getNumberOfPhone() + "," + getEmail();
+
     }
+
 }

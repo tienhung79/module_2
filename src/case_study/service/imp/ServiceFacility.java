@@ -12,4 +12,9 @@ public class ServiceFacility implements IServiceFacility {
     public void addNew() {
 
     }
+
+    @Override
+    public void edit() {
+
+    }
 }

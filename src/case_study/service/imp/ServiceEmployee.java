@@ -12,4 +12,9 @@ public class ServiceEmployee implements IServiceEmployee {
     public void addNew() {
 
     }
+
+    @Override
+    public void edit() {
+
+    }
 }

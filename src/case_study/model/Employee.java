@@ -20,7 +20,7 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public Employee(int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email, String level, String options, int salary) {
+    public Employee(int id, String name, String dateOfBirth, String gender, int idCMND, int numberOfPhone, String email, String level, String options, int salary) {
         super(id, name, dateOfBirth, gender, idCMND, numberOfPhone, email);
         this.level = level;
         this.options = options;
@@ -76,6 +76,6 @@ public class Employee extends Person {
                 '}';
     }
     public String toWriteCSV(){
-        return super.toWriteCSV()+level+options+salary;
+        return getLevel()+','+getOptions()+','+getSalary()+','+super.toWriteCSV();
     }
 }

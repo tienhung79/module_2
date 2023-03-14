@@ -3,15 +3,14 @@ package case_study.model;
 import case_study.model.abstractClass.Person;
 
 
-
 public class Customer extends Person {
     final String a = "Diamond";
-    final String b= "Platinium";
+    final String b = "Platinium";
     final String c = "Gold";
     final String d = "Silver";
     final String e = "Member";
-        private String kindOfCustomer;
-        private String address;
+    private String kindOfCustomer;
+    private String address;
 
     public Customer() {
     }
@@ -21,7 +20,7 @@ public class Customer extends Person {
         this.address = address;
     }
 
-    public Customer(int id, String name, String dateOfBirth, Boolean gender, int idCMND, int numberOfPhone, String email, String kindOfCustomer, String address) {
+    public Customer(int id, String name, String dateOfBirth, String gender, int idCMND, int numberOfPhone, String email, String kindOfCustomer, String address) {
         super(id, name, dateOfBirth, gender, idCMND, numberOfPhone, email);
         this.kindOfCustomer = kindOfCustomer;
         this.address = address;
@@ -68,10 +67,12 @@ public class Customer extends Person {
     public String toString() {
         return "Customer{" +
                 "kindOfCustomer='" + kindOfCustomer + '\'' +
-                ", address='" + address + '\'' + super.toString()+
+                ", address='" + address + ',' + super.toString() +
                 '}';
     }
-    public String toWriteCSV(){
-        return super.toWriteCSV()+ kindOfCustomer+address;
+
+    public String toWriteCSV() {
+        return super.toWriteCSV() +","+ kindOfCustomer + "," + address;
+
     }
 }

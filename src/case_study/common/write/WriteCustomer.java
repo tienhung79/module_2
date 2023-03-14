@@ -10,30 +10,32 @@ import java.util.List;
 
 public class WriteCustomer {
     public static void writeCustomer (String path, LinkedList<Customer> customerList){
-        FileWriter fileWriter = null;
-        BufferedWriter bufferedWriter = null;
+        FileWriter fileWriter ;
+        BufferedWriter bufferedWriter;
         try {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (Customer temp: customerList
-                 ) {
+            for (Customer temp: customerList) {
+//                System.out.println(temp.toWriteCSV());
                 bufferedWriter.write(temp.toWriteCSV());
                 bufferedWriter.newLine();
             }
+            bufferedWriter.close();
+            fileWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        finally {
-            try {
-                fileWriter.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-            try {
-                bufferedWriter.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        }
+//        finally {
+//            try {
+//                fileWriter.close();
+//            } catch (IOException e) {
+//                System.out.println("file đã đóng");
+//            }
+//            try {
+//                bufferedWriter.close();
+//            } catch (IOException e) {
+//                System.out.println("bộ nhớ đã đóng");
+//            }
+//        }
     }
 }
