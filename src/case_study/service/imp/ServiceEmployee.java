@@ -31,24 +31,11 @@ public class ServiceEmployee implements IServiceEmployee {
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId() == id) {
                 System.out.println("id này đã tồn tại");
-                return false;
+                return true;
             }
         }
-        return true;
+        return false;
     }
-
-    public boolean checkIdCMND(int idCMND) {
-        List<Employee> employeeList = iRepositoryEmployee.getAll();
-        for (int i = 0; i < employeeList.size(); i++) {
-            if (employeeList.get(i).getIdCMND() == idCMND) {
-                System.out.println("Đã có id này");
-                return false;
-            }
-
-        }
-        return true;
-    }
-
     @Override
     public void addNew() {
         List<Employee> employeeList = iRepositoryEmployee.getAll();
@@ -56,14 +43,14 @@ public class ServiceEmployee implements IServiceEmployee {
         int id = 0;
         do {
             try {
+                do {
+                    System.out.println("Nhập id");
+                    id = Integer.parseInt(sc.nextLine());
+                }while (checkId(id));
                 boolean flag = true;
-                System.out.println("Nhập id");
-                id = Integer.parseInt(sc.nextLine());
                 if (id <= 0) {
                     System.out.println("id phải là số dương");
                     flag = false;
-                }
-                if (checkId(id)) {
                 }
                 if (flag) {
                     break;
@@ -83,14 +70,14 @@ public class ServiceEmployee implements IServiceEmployee {
         int idCMND = 0;
         do {
             try {
+                do {
+                    System.out.println("Nhập id chứng minh nhân dân");
+                    idCMND = Integer.parseInt(sc.nextLine());
+                }while (checkId(idCMND));
                 boolean flag = true;
-                System.out.println("Nhập id chứng minh nhân dân");
-                idCMND = Integer.parseInt(sc.nextLine());
                 if (idCMND <= 0) {
                     System.out.println("id chứng minh nhân dân phải là số dương");
                     flag = false;
-                }
-                if (checkIdCMND(idCMND)) {
                 }
                 if (flag) {
                     break;
@@ -150,16 +137,16 @@ public class ServiceEmployee implements IServiceEmployee {
         iRepositoryEmployee.addNew(path, employeeList);
     }
 
-    //public boolean checkIdSame(int id){
-//        List<Employee> employeeList = iRepositoryEmployee.getAll();
-//    for (int i = 0; i < employeeList.size(); i++) {
-//        if (employeeList.get(i).getId()!=id){
-//            System.out.println("id này không tồn tại");
-//            return false;
-//        }
-//
-//    }
-//}
+    public boolean checkIdSame(int id) {
+        List<Employee> employeeList = iRepositoryEmployee.getAll();
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeList.get(i).getId() == id) {
+                return false;
+            }
+        }
+        System.out.println("id này không tồn tại");
+        return true;
+    }
     @Override
     public void edit() {
         List<Employee> employeeList = iRepositoryEmployee.getAll();
@@ -168,14 +155,14 @@ public class ServiceEmployee implements IServiceEmployee {
         int id = 0;
         do {
             try {
+                do {
+                    System.out.println("Nhập id muốn sửa");
+                    id = Integer.parseInt(sc.nextLine());
+                }while (checkIdSame(id));
                 boolean flag = true;
-                System.out.println("Nhập id muốn sửa");
-                id = Integer.parseInt(sc.nextLine());
                 if (id <= 0) {
                     System.out.println("id phải là số dương");
                     flag = false;
-                }
-                if (checkId(id)) {
                 }
                 if (flag) {
                     break;
@@ -194,8 +181,27 @@ public class ServiceEmployee implements IServiceEmployee {
                 employee.setDateOfBirth(sc.nextLine());
                 System.out.println("Nhập giới tính: ");
                 employee.setGender(sc.nextLine());
-                System.out.println("Nhập id CMND");
-                employee.setIdCMND(Integer.parseInt(sc.nextLine()));
+                int idCMND=0;
+                do {
+                    try {
+                        do {
+                            System.out.println("Nhập id CMND");
+                            employee.setIdCMND(idCMND=Integer.parseInt(sc.nextLine()));
+                        }while (checkId(idCMND));
+                        boolean flag = true;
+                        if (idCMND<=0){
+                            System.out.println("idCMND phải là số dương");
+                            flag = false;
+                        }
+                        if (flag){
+                            break;
+                        }
+                    }catch (NumberFormatException e){
+                        System.out.println("Không phải là số");
+                    }
+
+                }while (true);
+
                 int numberOfPhone = 0;
                 do {
                     try {

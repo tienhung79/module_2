@@ -1,10 +1,14 @@
 package case_study.cotroller;
 
+import case_study.service.IServiceFacility;
+import case_study.service.imp.ServiceFacility;
+
 import java.util.Scanner;
 
 public class FacilityController {
 
-    public void displayFacilityMenu(){
+    public static void displayFacilityMenu(){
+        IServiceFacility iServiceFacility = new ServiceFacility();
         Scanner sc = new Scanner(System.in);
         String choice;
         do {
@@ -20,6 +24,7 @@ public class FacilityController {
                 case "1":
                     break;
                 case "2":
+                    iServiceFacility.choiceAdd();
                     break;
                 case "3":
                     break;
