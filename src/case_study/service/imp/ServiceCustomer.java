@@ -1,6 +1,7 @@
 package case_study.service.imp;
 
 import case_study.model.Customer;
+import case_study.model.Employee;
 import case_study.repository.IRepositoryCutomer;
 import case_study.repository.imp.RepositoryCustomer;
 import case_study.service.IServiceCustomer;
@@ -17,21 +18,28 @@ public class ServiceCustomer implements IServiceCustomer {
         List<Customer> customerList = iRepositoryCutomer.disPlay();
         for (int i = 0; i < customerList.size(); i++) {
             if (customerList.get(i).getId() == id) {
-                return true;
+                System.out.println("id đã tồn tại");
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     public boolean checkIDCMND(int idCMND) {
         List<Customer> customerList = iRepositoryCutomer.disPlay();
+        boolean flag = true;
         for (int i = 0; i < customerList.size(); i++) {
             if (customerList.get(i).getIdCMND() == idCMND) {
+                System.out.println("idCMND đã tồn tại");
                 return true;
             }
         }
+//        if (flag){
+//            return false;
+//        }
         return false;
     }
+
     @Override
     public void disPlay() {
         List<Customer> customerList = iRepositoryCutomer.disPlay();
@@ -56,19 +64,15 @@ public class ServiceCustomer implements IServiceCustomer {
                 boolean flag = true;
                 System.out.println("Nhập id: ");
                 id = Integer.parseInt(sc.nextLine());
-                if (id <= 0) {
-                    System.out.println("id phải là số dương");
-                    flag = false;
-                }
-//                for (int i = 0; i < customerList.size(); i++) {
-//                    if (customerList.get(i).getId()==id){
-//                        System.out.println("id đã tồn tại");
-//                        flag = false;
-//                    }
+//                if (checkID(id)) {
+//                    flag =false;
 //                }
                 if (checkID(id)) {
                     System.out.println("id đã tồn tại");
-                    flag = false;
+                    if (id <= 0) {
+                        System.out.println("id phải là số dương ");
+                        flag = false;
+                    }
                 }
                 if (flag) {
                     break;
@@ -97,13 +101,14 @@ public class ServiceCustomer implements IServiceCustomer {
                     System.out.println("id phải là số dương");
                     idCNMDFlag = false;
                 }
+                if (checkIDCMND(idCNMD)) {
+
+                }
 
                 if (idCNMDFlag) {
                     break;
                 }
-                if (checkIDCMND(idCNMD)) {
-                    System.out.println("idCMND đã tồn tại");
-                }
+
             } catch (NumberFormatException e) {
                 System.out.println("Bạn nhập không phải là số.");
             } catch (Exception e) {
@@ -116,19 +121,19 @@ public class ServiceCustomer implements IServiceCustomer {
                 boolean flag = true;
                 System.out.println("Nhập số điện thoại: ");
                 numberOfPhone = Integer.parseInt(sc.nextLine());
-                if (numberOfPhone<=0){
+                if (numberOfPhone <= 0) {
                     System.out.println("Số điện thoại phải lớn hơn không");
-                    flag=false;
+                    flag = false;
                 }
-                if (flag){
+                if (flag) {
                     break;
                 }
-            }catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Bạn nhập không phải là số");
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Nhập sai. Yêu cầu nhập lại");
             }
-        }while (true);
+        } while (true);
 
         System.out.println("Nhập email");
         String email = sc.nextLine();
@@ -168,10 +173,25 @@ public class ServiceCustomer implements IServiceCustomer {
         iRepositoryCutomer.addCustomer(path, customerList);
     }
 
+    public boolean checkIdSame(int id) {
+        List<Customer> employeeList = iRepositoryCutomer.disPlay();
+        boolean flag = true;
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeList.get(i).getId() == id) {
+//                System.out.println("id này không tồn tại");
+                flag = false;
+            }
+            if (flag){
+                return false;
+            }
+        }
+        return true;
+    }
+
     @Override
     public void edit() {
-            List<Customer> customerList = iRepositoryCutomer.disPlay();
-            Scanner sc = new Scanner(System.in);
+        List<Customer> customerList = iRepositoryCutomer.disPlay();
+        Scanner sc = new Scanner(System.in);
         int id = 0;
         do {
             try {
@@ -182,12 +202,13 @@ public class ServiceCustomer implements IServiceCustomer {
                     System.out.println("id phải là số dương");
                     flag = false;
                 }
+                if (checkIdSame(id)) {
+                    System.out.println("id này không tồn tại");
+                }
                 if (flag) {
                     break;
                 }
-                if (checkID(id)) {
-                    System.out.println("id đã tồn tại");
-                }
+
             } catch (NumberFormatException e) {
                 System.out.println("Bạn nhập không phải là số.");
             } catch (Exception e) {
@@ -195,7 +216,7 @@ public class ServiceCustomer implements IServiceCustomer {
             }
         } while (true);
         for (int i = 0; i < customerList.size(); i++) {
-            if (customerList.get(i).getId()==id){
+            if (customerList.get(i).getId() == id) {
                 Customer customer = new Customer();
                 System.out.println("Sửa tên");
                 customer.setName(sc.nextLine());
@@ -214,10 +235,8 @@ public class ServiceCustomer implements IServiceCustomer {
                 System.out.println("Sửa địa chỉ");
                 customer.setAddress(sc.nextLine());
                 customer = new Customer(id, customer.getName(), customer.getDateOfBirth(), customer.getGender(), customer.getIdCMND(), customer.getNumberOfPhone(), customer.getEmail(), customer.getKindOfCustomer(), customer.getAddress());
-                iRepositoryCutomer.repairCustomer(i,customerList,path,customer);
+                iRepositoryCutomer.repairCustomer(i, customerList, path, customer);
                 return;
-            }else {
-                System.out.println("Không tìm thấy id");
             }
         }
 

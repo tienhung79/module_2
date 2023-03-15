@@ -6,4 +6,9 @@ import java.util.List;
 
 public interface IRepositoryEmployee {
 
+    List<Employee> getAll();
+
+    void addNew(String path, List<Employee> employeeList);
+
+    void edit(int i, Employee employee, List<Employee> employeeList, String path);
 }

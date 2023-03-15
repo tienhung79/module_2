@@ -19,20 +19,22 @@ public class WriteEmployees {
                 bufferedWriter.write(temp.toWriteCSV());
                 bufferedWriter.newLine();
             }
+            bufferedWriter.close();
+            fileWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        finally {
-            try {
-                fileWriter.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-            try {
-                bufferedWriter.close();
-            } catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        }
+//        finally {
+//            try {
+//                fileWriter.close();
+//            } catch (IOException e) {
+//                System.out.println(e.getMessage());
+//            }
+//            try {
+//                bufferedWriter.close();
+//            } catch (IOException e) {
+//                System.out.println(e.getMessage());
+//            }
+//        }
     }
 }

@@ -4,7 +4,7 @@ import case_study.model.abstractClass.Person;
 
 public class Employee extends Person {
     final String a = "Trung cấp";
-    final String b= "Cao đẳng";
+    final String b = "Cao đẳng";
     final String c = "Đại học";
     final String d = "Sau đại học";
     private String level;
@@ -72,10 +72,11 @@ public class Employee extends Person {
         return "Employee{" +
                 "level='" + level + '\'' +
                 ", options='" + options + '\'' +
-                ", salary=" + salary +super.toString()+
+                ", salary=" + salary + super.toString() +
                 '}';
     }
-    public String toWriteCSV(){
-        return getLevel()+','+getOptions()+','+getSalary()+','+super.toWriteCSV();
+
+    public String toWriteCSV() {
+        return super.toWriteCSV() + "," + getLevel() + "," + getOptions() + "," + getSalary();
     }
 }

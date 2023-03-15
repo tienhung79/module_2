@@ -1,8 +1,12 @@
 package case_study.cotroller;
 
+import case_study.service.IServiceEmployee;
+import case_study.service.imp.ServiceEmployee;
+
 import java.util.Scanner;
 
 public class EmployeeController {
+    IServiceEmployee iServiceEmployee = new ServiceEmployee();
     public void displayEmployeeMenu() {
         Scanner sc = new Scanner(System.in);
         String choice;
@@ -17,8 +21,10 @@ public class EmployeeController {
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
+                    iServiceEmployee.disPlay();
                     break;
                 case "2":
+                    iServiceEmployee.addNew();
                     break;
                 case "3":
                     break;
