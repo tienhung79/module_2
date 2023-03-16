@@ -1,19 +1,18 @@
 package case_study.service.imp;
 
-import case_study.common.read.ReadVilla;
-import case_study.common.write.WriteVilla;
-import case_study.model.Villa;
+import case_study.common.read.ReadHouse;
+import case_study.common.write.WriteHouse;
+import case_study.model.House;
+import case_study.model.Room;
 
-import javax.xml.soap.SAAJResult;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
-//String serviceName, int areaUse, int price, int peopleMax, String date, String standardsRoom, int areaSwimPooll, int numberOfFloorsVilla
+//String serviceName, int areaUse, int price, int peopleMax, String date, String standardsRoomHouse, int numberOfFloorsHouse
 
-public class ServiceVilla {
-    public static void addVilla(){
+public class ServiceHouse {
+    public static void addHouse() {
+       LinkedHashMap<House,Integer>houseIntegerLinkedHashMap = ReadHouse.readHouse("src/case_study/data/dataHouse.csv");
         Scanner sc = new Scanner(System.in);
-
-        LinkedHashMap<Villa,Integer> villaLinkedHashMap = ReadVilla.readVilla("src/case_study/data/dataVilla.csv");
         System.out.println("Nhập tên dịch vụ");
         String name = "Villa";
         System.out.println("Nhập diện tích sử dụng");
@@ -26,13 +25,10 @@ public class ServiceVilla {
         String date = sc.nextLine();
         System.out.println("Nhập tiêu chuẩn phòng");
         String standardsRoom = sc.nextLine();
-        System.out.println("Nhập diện tích hồ bơi");
-        int areaSwimpool= Integer.parseInt(sc.nextLine());
         System.out.println("Nhập số tầng:");
         int numberOfFloorsVilla = Integer.parseInt(sc.nextLine());
-        Villa villa = new Villa(name,areaUse,price,peopleMax,date,standardsRoom,areaSwimpool,numberOfFloorsVilla);
-        villaLinkedHashMap.put(villa,0);
-        WriteVilla.writeVilla("src/case_study/data/dataVilla.csv",villaLinkedHashMap);
+        House house = new House(name,areaUse,price,peopleMax,date,standardsRoom,numberOfFloorsVilla);
+        houseIntegerLinkedHashMap.put(house,0);
+        WriteHouse.writeHouse("src/case_study/data/dataHouse.csv",houseIntegerLinkedHashMap);
     }
-
 }

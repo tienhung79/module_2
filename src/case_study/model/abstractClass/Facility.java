@@ -70,6 +70,6 @@ public class Facility {
             ", date='" + date + '\'' ;
   }
   public String toWriteCSV(){
-    return serviceName+areaUse+price+peopleMax+date;
+    return getServiceName()+","+getAreaUse()+","+getPrice()+","+getPeopleMax()+","+getDate();
   }
 }

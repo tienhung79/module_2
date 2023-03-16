@@ -8,11 +8,12 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ReadRoom {
-    public static List<Room> readRoom(String path){
-        List<Room> roomList = new ArrayList<>();
+    public static LinkedHashMap<Room,Integer> readRoom(String path){
+        LinkedHashMap<Room,Integer> roomList = new LinkedHashMap<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
         try {
@@ -24,7 +25,8 @@ public class ReadRoom {
             while ((temp= bufferedReader.readLine())!=null){
                 tempArray = temp.split(",");
                 room = new Room(tempArray[0],Integer.parseInt(tempArray[1]),Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),tempArray[4],tempArray[5]);
-                roomList.add(room);
+                int value = Integer.parseInt(tempArray[6]);
+                roomList.put(room,value);
             }
             fileReader.close();
             bufferedReader.close();

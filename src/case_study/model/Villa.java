@@ -56,6 +56,6 @@ public class Villa extends Facility {
                 '}';
     }
     public String toWriteCSV(){
-        return super.toWriteCSV()+standardsRoomVilla+areaSwimPooll+numberOfFloorsVilla;
+        return super.toWriteCSV()+","+getStandardsRoom()+","+getAreaSwimPooll()+","+getNumberOfFloors();
     }
 }

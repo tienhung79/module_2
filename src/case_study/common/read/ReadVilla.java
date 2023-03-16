@@ -8,12 +8,11 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class ReadVilla {
-    public static List<Villa> readVilla(String path){
-        List<Villa> villaList = new ArrayList<>();
+    public static LinkedHashMap<Villa,Integer> readVilla(String path){
+        LinkedHashMap<Villa,Integer> villaList = new LinkedHashMap<>();
         FileReader fileReader = null;
         BufferedReader bufferedReader=null;
         try {
@@ -25,10 +24,11 @@ public class ReadVilla {
             while ((temp= bufferedReader.readLine())!=null){
                 tempArray = temp.split(",");
                 villa = new Villa(tempArray[0],Integer.parseInt(tempArray[1]),Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),tempArray[4],tempArray[5],Integer.parseInt(tempArray[6]),Integer.parseInt(tempArray[7]));
-                villaList.add(villa);
+                int value =Integer.parseInt(tempArray[8]);
+                villaList.put(villa,value);
             }
-            fileReader.close();
             bufferedReader.close();
+            fileReader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } catch (IOException e) {

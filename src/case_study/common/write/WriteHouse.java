@@ -5,18 +5,20 @@ import case_study.model.House;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class WriteHouse {
-    public static void writeHouse(String path, List<House> houseList){
+    public static void writeHouse(String path, LinkedHashMap<House,Integer> houseList){
         FileWriter fileWriter = null;
         BufferedWriter bufferedWriter = null;
         try {
             fileWriter = new FileWriter(path);
             bufferedWriter = new BufferedWriter(fileWriter);
-            for (House temp: houseList
+            for (Map.Entry<House,Integer> temp: houseList.entrySet()
                  ) {
-                bufferedWriter.write(temp.toWriteCSV());
+                bufferedWriter.write(temp.getKey().toWriteCSV()+","+"0");
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {

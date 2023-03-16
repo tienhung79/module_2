@@ -39,8 +39,10 @@ public class ServiceFacility implements IServiceFacility {
                     ServiceVilla.addVilla();
                     break;
                 case "2":
+                    ServiceHouse.addHouse();
                     break;
                 case "3":
+                    ServiceRoom.addRoom();
                     break;
                 case "4":
                     FacilityController.displayFacilityMenu();
