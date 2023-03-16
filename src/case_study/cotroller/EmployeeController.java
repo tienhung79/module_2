@@ -27,6 +27,7 @@ public class EmployeeController {
                     iServiceEmployee.addNew();
                     break;
                 case "3":
+                    iServiceEmployee.edit();
                     break;
                 case "4":
                     new FuramaController().displayMainMenu();

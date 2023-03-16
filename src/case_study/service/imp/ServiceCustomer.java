@@ -1,5 +1,7 @@
 package case_study.service.imp;
 
+import case_study.format.FormatDate;
+import case_study.format.PhoneNumber;
 import case_study.model.Customer;
 import case_study.repository.IRepositoryCutomer;
 import case_study.repository.imp.RepositoryCustomer;
@@ -105,21 +107,18 @@ public class ServiceCustomer implements IServiceCustomer {
                 System.out.println("Nhập sai. yêu cầu nhập lại ");
             }
         } while (true);
-        int numberOfPhone = 0;
+        String numberOfPhone = null;
         do {
             try {
-                boolean flag = true;
+                boolean flag1 = false;
                 System.out.println("Nhập số điện thoại: ");
-                numberOfPhone = Integer.parseInt(sc.nextLine());
-                if (numberOfPhone <= 0) {
-                    System.out.println("Số điện thoại phải lớn hơn không");
-                    flag = false;
+                numberOfPhone = sc.nextLine();
+                if (PhoneNumber.validateNumberOfPhone(numberOfPhone)) {
+                    flag1 = true;
                 }
-                if (flag) {
+                if (flag1) {
                     break;
                 }
-            } catch (NumberFormatException e) {
-                System.out.println("Bạn nhập không phải là số");
             } catch (Exception e) {
                 System.out.println("Nhập sai. Yêu cầu nhập lại");
             }
@@ -129,33 +128,7 @@ public class ServiceCustomer implements IServiceCustomer {
         String email = sc.nextLine();
         String kindOfCustomer;
         System.out.println("Nhập loại khách hàng:");
-        System.out.println("a = Diamond");
-        System.out.println("b = Platinium");
-        System.out.println("c = Gold");
-        System.out.println("d = Silver");
-        System.out.println("e = Member");
-        Customer kind = new Customer();
         kindOfCustomer = sc.nextLine();
-        switch (kindOfCustomer) {
-            case "a":
-                kind.getA();
-                break;
-            case "b":
-                kind.getB();
-                break;
-            case "c":
-                kind.getC();
-                break;
-            case "d":
-                kind.getD();
-                break;
-            case "e":
-                kind.getE();
-                break;
-            default:
-                System.out.println("Không có loại khách hàng này");
-                break;
-        }
         System.out.println("Nhập địa chỉ:");
         String address = sc.nextLine();
         Customer customer = new Customer(id, name, dateOfBirth, gender, idCNMD, numberOfPhone, email, kindOfCustomer, address);
@@ -173,7 +146,8 @@ public class ServiceCustomer implements IServiceCustomer {
         System.out.println("id này không tồn tại");
         return true;
     }
-    public boolean checkIdCMNDSame(int id ){
+
+    public boolean checkIdCMNDSame(int id) {
         List<Customer> customerList = iRepositoryCustomer.disPlay();
         for (int i = 0; i < customerList.size(); i++) {
             if (customerList.get(i).getId() == id) {
@@ -183,6 +157,7 @@ public class ServiceCustomer implements IServiceCustomer {
         }
         return false;
     }
+
     @Override
     public void edit() {
         List<Customer> customerList = iRepositoryCustomer.disPlay();
@@ -209,47 +184,66 @@ public class ServiceCustomer implements IServiceCustomer {
                 System.out.println("Nhập sai. yêu cầu nhập lại ");
             }
         } while (true);
-        for (int i = 0; i < customerList.size(); i++) {
-            if (customerList.get(i).getId() == id) {
-                Customer customer = new Customer();
-                System.out.println("Sửa tên");
-                customer.setName(sc.nextLine());
-                System.out.println("Sửa ngày sinh nhật");
-                customer.setDateOfBirth(sc.nextLine());
-                System.out.println("Sửa giới tính");
-                customer.setGender(sc.nextLine());
-                int idCMND =0;
-                do {
-                    try {
-                        do {
-                            System.out.println("Sửa id chứng minh nhân dân");
-                            customer.setIdCMND(idCMND=Integer.parseInt(sc.nextLine()));
-                        }while (checkIdCMNDSame(idCMND));
-                        boolean flag = true;
-                        if (idCMND<=0){
-                            System.out.println("idCMND phải là số dương");
-                            flag = false;
-                        }
-                        if (flag){
-                            break;
-                        }
-                    }catch (NumberFormatException e){
-                        System.out.println("Bạn nhập không phải là số");
-                    }
-                }while (true);
-                System.out.println("Sửa số điện thoại");
-                customer.setNumberOfPhone(Integer.parseInt(sc.nextLine()));
-                System.out.println("Sửa email");
-                customer.setEmail(sc.nextLine());
-                System.out.println("Sửa loại khách hàng");
-                customer.setKindOfCustomer(sc.nextLine());
-                System.out.println("Sửa địa chỉ");
-                customer.setAddress(sc.nextLine());
-                customer = new Customer(id, customer.getName(), customer.getDateOfBirth(), customer.getGender(), customer.getIdCMND(), customer.getNumberOfPhone(), customer.getEmail(), customer.getKindOfCustomer(), customer.getAddress());
-                iRepositoryCustomer.repairCustomer(i, customerList, path, customer);
-                return;
-            }
-        }
 
+        Customer customer = new Customer();
+        System.out.println("Sửa tên");
+        customer.setName(sc.nextLine());
+        String dateOfBirth = null;
+        do {
+            boolean flag = true;
+            System.out.println("Sửa ngày sinh nhật");
+            customer.setDateOfBirth(dateOfBirth = sc.nextLine());
+            if (FormatDate.formatDate(dateOfBirth)) {
+                break;
+            }
+        } while (true);
+
+        System.out.println("Sửa giới tính");
+        customer.setGender(sc.nextLine());
+        int idCMND = 0;
+        do {
+            try {
+                do {
+                    System.out.println("Sửa id chứng minh nhân dân");
+                    customer.setIdCMND(idCMND = Integer.parseInt(sc.nextLine()));
+                } while (checkIdCMNDSame(idCMND));
+                boolean flag = true;
+                if (idCMND <= 0) {
+                    System.out.println("idCMND phải là số dương");
+                    flag = false;
+                }
+                if (flag) {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Bạn nhập không phải là số");
+            }
+        } while (true);
+        String numberOfPhone = null;
+        do {
+            try {
+                boolean flag = false;
+                System.out.println("Nhập số điện thoại: ");
+                customer.setNumberOfPhone(numberOfPhone=sc.nextLine());
+                if (PhoneNumber.validateNumberOfPhone(numberOfPhone)) {
+                    flag = true;
+                }
+                if (flag) {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Bạn nhập không phải là số");
+            } catch (Exception e) {
+                System.out.println("Nhập sai. Yêu cầu nhập lại");
+            }
+        } while (true);
+        System.out.println("Sửa email");
+        customer.setEmail(sc.nextLine());
+        System.out.println("Sửa loại khách hàng");
+        customer.setKindOfCustomer(sc.nextLine());
+        System.out.println("Sửa địa chỉ");
+        customer.setAddress(sc.nextLine());
+        customer = new Customer(id, customer.getName(), customer.getDateOfBirth(), customer.getGender(), customer.getIdCMND(), customer.getNumberOfPhone(), customer.getEmail(), customer.getKindOfCustomer(), customer.getAddress());
+        iRepositoryCustomer.repairCustomer(id, customerList, path, customer);
     }
 }

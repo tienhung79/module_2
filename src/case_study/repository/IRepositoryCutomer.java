@@ -11,6 +11,6 @@ public interface IRepositoryCutomer {
     void addCustomer(String path, List<Customer> customerList);
 
 
-    void repairCustomer(int i, List<Customer> customerList, String path, Customer customer);
+    void repairCustomer(int id, List<Customer> customerList, String path, Customer customer);
 
 }

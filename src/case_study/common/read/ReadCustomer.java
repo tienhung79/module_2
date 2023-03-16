@@ -24,7 +24,7 @@ public class ReadCustomer {
             String[] tempArr;
             while ((temp = bufferedReader.readLine()) != null) {
                 tempArr = temp.split(",");
-                customer = new Customer(Integer.parseInt(tempArr[0]), tempArr[1], tempArr[2], tempArr[3], Integer.parseInt(tempArr[4]), Integer.parseInt(tempArr[5]), tempArr[6], tempArr[7], tempArr[8]);
+                customer = new Customer(Integer.parseInt(tempArr[0]), tempArr[1], tempArr[2], tempArr[3], Integer.parseInt(tempArr[4]),tempArr[5], tempArr[6], tempArr[7], tempArr[8]);
                 customerList.add(customer);
             }
 

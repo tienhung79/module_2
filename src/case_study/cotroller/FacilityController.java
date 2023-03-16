@@ -22,6 +22,7 @@ public class FacilityController {
             choice = sc.nextLine();
             switch (choice) {
                 case "1":
+                    iServiceFacility.disPlay();
                     break;
                 case "2":
                     iServiceFacility.choiceAdd();

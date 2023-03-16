@@ -7,13 +7,13 @@ public class Person {
     private String dateOfBirth;
     private String gender;
     private int idCMND;
-    private int numberOfPhone;
+    private String numberOfPhone;
     private String email;
 
     public Person() {
     }
 
-    public Person(int id, String name, String dateOfBirth, String gender, int idCMND, int numberOfPhone, String email) {
+    public Person(int id, String name, String dateOfBirth, String gender, int idCMND, String numberOfPhone, String email) {
         this.id = id;
         this.name = name;
         this.dateOfBirth = dateOfBirth;
@@ -63,11 +63,11 @@ public class Person {
         this.idCMND = idCMND;
     }
 
-    public int getNumberOfPhone() {
+    public String getNumberOfPhone() {
         return numberOfPhone;
     }
 
-    public void setNumberOfPhone(int numberOfPhone) {
+    public void setNumberOfPhone(String numberOfPhone) {
         this.numberOfPhone = numberOfPhone;
     }
 

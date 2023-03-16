@@ -26,12 +26,12 @@ public class WriteHouse {
         }
         finally {
             try {
-                fileWriter.close();
+                bufferedWriter.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }
             try {
-                bufferedWriter.close();
+                fileWriter.close();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
             }

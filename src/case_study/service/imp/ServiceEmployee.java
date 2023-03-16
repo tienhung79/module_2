@@ -88,12 +88,12 @@ public class ServiceEmployee implements IServiceEmployee {
                 System.out.println("Yêu cầu nhập lại");
             }
         } while (true);
-        int numberOfPhone = 0;
+        String numberOfPhone = null;
         do {
             try {
                 boolean flag = true;
                 System.out.println("Nhập sdt");
-                numberOfPhone = Integer.parseInt(sc.nextLine());
+                numberOfPhone = sc.nextLine();
                 if (PhoneNumber.validateNumberOfPhone(String.valueOf(numberOfPhone))) {
                     System.out.println("Vui lòng nhập số điện thoại bắt đầu từ số 0 và có 8 số");
                     flag = false;
@@ -202,13 +202,13 @@ public class ServiceEmployee implements IServiceEmployee {
 
                 }while (true);
 
-                int numberOfPhone = 0;
+                String numberOfPhone = null;
                 do {
                     try {
                         boolean flag = true;
                         System.out.println("Nhập sdt");
-                        employee.setNumberOfPhone(Integer.parseInt(sc.nextLine()));
-                        if (PhoneNumber.validateNumberOfPhone(String.valueOf(numberOfPhone))) {
+                        employee.setNumberOfPhone(sc.nextLine());
+                        if (PhoneNumber.validateNumberOfPhone(numberOfPhone)) {
                             System.out.println("Vui lòng nhập số điện thoại bắt đầu từ số 0 và có 8 số");
                             flag = false;
                         }

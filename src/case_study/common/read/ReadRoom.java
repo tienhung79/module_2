@@ -28,8 +28,8 @@ public class ReadRoom {
                 int value = Integer.parseInt(tempArray[6]);
                 roomList.put(room,value);
             }
-            fileReader.close();
             bufferedReader.close();
+            fileReader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } catch (IOException e) {

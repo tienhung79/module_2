@@ -28,8 +28,8 @@ public class ReadHouse {
                 int value= Integer.parseInt(tempArray[7]);
                 houseList.put(house,value);
             }
-            fileReader.close();
             bufferedReader.close();
+            fileReader.close();
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         } catch (IOException e) {
