@@ -1,6 +1,8 @@
 package case_study.service.imp;
 
 import case_study.format.FormatDate;
+import case_study.format.FormatName;
+import case_study.format.FormatNameFacility;
 import case_study.format.PhoneNumber;
 import case_study.model.Customer;
 import case_study.repository.IRepositoryCutomer;
@@ -78,8 +80,15 @@ public class ServiceCustomer implements IServiceCustomer {
                 System.out.println("Nhập sai. yêu cầu nhập lại ");
             }
         } while (true);
-        System.out.println("Nhập tên: ");
-        String name = sc.nextLine();
+        String name;
+        do {
+            System.out.println("Nhập tên: ");
+            name = sc.nextLine();
+            if (FormatName.validateName(name)){
+                break;
+            }
+            System.out.println("Viết hoa kí tự đầu của tên ");
+        }while (true);
         System.out.println("Nhập ngày tháng năm sinh: ");
         String dateOfBirth = sc.nextLine();
         System.out.println("Nhập giới tính: ");
@@ -186,8 +195,15 @@ public class ServiceCustomer implements IServiceCustomer {
         } while (true);
 
         Customer customer = new Customer();
-        System.out.println("Sửa tên");
-        customer.setName(sc.nextLine());
+        String name;
+        do {
+            System.out.println("Sửa tên: ");
+            customer.setName(name = sc.nextLine());
+            if (FormatName.validateName(name)){
+                break;
+            }
+            System.out.println("Viết hoa kĩ tự đầu của tên");
+        }while (true);
         String dateOfBirth = null;
         do {
             boolean flag = true;

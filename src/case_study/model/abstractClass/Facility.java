@@ -2,7 +2,7 @@ package case_study.model.abstractClass;
 
 import java.util.Date;
 
-public class Facility {
+public  class Facility {
   private String id;
   private String serviceName;
   private int areaUse;
@@ -14,6 +14,7 @@ public class Facility {
   }
 
   public Facility(String id,String serviceName, int areaUse, int price, int peopleMax, String date) {
+    this.id = id;
     this.serviceName = serviceName;
     this.areaUse = areaUse;
     this.price = price;
@@ -72,13 +73,15 @@ public class Facility {
   @Override
   public String toString() {
     return
-            "serviceName='" + serviceName + '\'' +
+            "id='" + id + '\'' +
+            ", serviceName='" + serviceName + '\'' +
             ", areaUse=" + areaUse +
             ", price=" + price +
             ", peopleMax=" + peopleMax +
             ", date='" + date + '\'' ;
   }
+
   public String toWriteCSV(){
-    return getId()+","+getServiceName()+","+getAreaUse()+","+getPrice() +","+getPeopleMax()+","+getDate();
+    return ","+getId()+","+getServiceName()+","+getAreaUse()+","+getPrice() +","+getPeopleMax()+","+getDate()+",";
   }
 }

@@ -49,13 +49,14 @@ public class Villa extends Facility {
 
     @Override
     public String toString() {
-        return "Villa{" +
+        return "Villa{"+ super.toString()+","+
                 "standardsRoom='" + standardsRoomVilla + '\'' +
                 ", areaSwimPooll=" + areaSwimPooll +
-                ", numberOfFloors=" + numberOfFloorsVilla +super.toString()+
+                ", numberOfFloors=" + numberOfFloorsVilla +
                 '}';
     }
+
     public String toWriteCSV(){
-        return super.toWriteCSV()+","+getStandardsRoom()+","+getAreaSwimPooll()+","+getNumberOfFloors();
+        return ","+super.toWriteCSV()+","+getStandardsRoom()+","+getAreaSwimPooll()+","+getNumberOfFloors()+",";
     }
 }

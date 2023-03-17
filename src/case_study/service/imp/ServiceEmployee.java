@@ -1,5 +1,6 @@
 package case_study.service.imp;
 
+import case_study.format.FormatName;
 import case_study.format.PhoneNumber;
 import case_study.model.Employee;
 import case_study.repository.IRepositoryEmployee;
@@ -36,6 +37,7 @@ public class ServiceEmployee implements IServiceEmployee {
         }
         return false;
     }
+
     @Override
     public void addNew() {
         List<Employee> employeeList = iRepositoryEmployee.getAll();
@@ -46,7 +48,7 @@ public class ServiceEmployee implements IServiceEmployee {
                 do {
                     System.out.println("Nhập id");
                     id = Integer.parseInt(sc.nextLine());
-                }while (checkId(id));
+                } while (checkId(id));
                 boolean flag = true;
                 if (id <= 0) {
                     System.out.println("id phải là số dương");
@@ -61,19 +63,26 @@ public class ServiceEmployee implements IServiceEmployee {
                 System.out.println("Nhập sai yêu cầu nhập lại");
             }
         } while (true);
-        System.out.println("Nhập tên:");
-        String name = sc.nextLine();
+        String name;
+        do {
+            System.out.println("Nhập tên của bạn");
+            name=sc.nextLine();
+            if (FormatName.validateName(name)){
+                break;
+            }
+            System.out.println("Nhập tên có chữ cái hoa viết đầu");
+        }while (true);
         System.out.println("Nhập ngày tháng năm sinh: ");
         String dataOfBirth = sc.nextLine();
         System.out.println("Nhập giới tính:");
         String gender = sc.nextLine();
-        int idCMND = 0;
+        int idCMND;
         do {
             try {
                 do {
                     System.out.println("Nhập id chứng minh nhân dân");
                     idCMND = Integer.parseInt(sc.nextLine());
-                }while (checkId(idCMND));
+                } while (checkId(idCMND));
                 boolean flag = true;
                 if (idCMND <= 0) {
                     System.out.println("id chứng minh nhân dân phải là số dương");
@@ -88,24 +97,14 @@ public class ServiceEmployee implements IServiceEmployee {
                 System.out.println("Yêu cầu nhập lại");
             }
         } while (true);
-        String numberOfPhone = null;
+        String numberOfPhone;
         do {
-            try {
-                boolean flag = true;
-                System.out.println("Nhập sdt");
-                numberOfPhone = sc.nextLine();
-                if (PhoneNumber.validateNumberOfPhone(String.valueOf(numberOfPhone))) {
-                    System.out.println("Vui lòng nhập số điện thoại bắt đầu từ số 0 và có 8 số");
-                    flag = false;
-                }
-                if (flag) {
-                    break;
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Vui Lòng nhập số ");
-            } catch (Exception e) {
-                System.out.println("Vui lòng nhập lại");
+            System.out.println("Nhập số điện thoại");
+            numberOfPhone = sc.nextLine();
+            if (PhoneNumber.validateNumberOfPhone(numberOfPhone)){
+                break;
             }
+            System.out.println("Vui lòng nhập số điện thoại theo  format");
         } while (true);
         System.out.println("Nhập email:");
         String email = sc.nextLine();
@@ -113,7 +112,7 @@ public class ServiceEmployee implements IServiceEmployee {
         String level = sc.nextLine();
         System.out.println("Nhập vị trí làm việc:");
         String option = sc.nextLine();
-        int salary = 0;
+        int salary;
         do {
             try {
                 boolean flag = true;
@@ -147,6 +146,7 @@ public class ServiceEmployee implements IServiceEmployee {
         System.out.println("id này không tồn tại");
         return true;
     }
+
     @Override
     public void edit() {
         List<Employee> employeeList = iRepositoryEmployee.getAll();
@@ -158,7 +158,7 @@ public class ServiceEmployee implements IServiceEmployee {
                 do {
                     System.out.println("Nhập id muốn sửa");
                     id = Integer.parseInt(sc.nextLine());
-                }while (checkIdSame(id));
+                } while (checkIdSame(id));
                 boolean flag = true;
                 if (id <= 0) {
                     System.out.println("id phải là số dương");
@@ -173,82 +173,82 @@ public class ServiceEmployee implements IServiceEmployee {
                 System.out.println("Nhập sai yêu cầu nhập lại");
             }
         } while (true);
+        String name ;
+        do {
+            System.out.println("Sửa tên của bạn");
+            employee.setName(name=sc.nextLine());
+            if (FormatName.validateName(name)){
+                break;
+            }
+            System.out.println("Nhập tên có chữ cái hoa viết đầu");
+        }while (true);
+        System.out.println("Nhập ngày tháng năm sinh");
+        employee.setDateOfBirth(sc.nextLine());
+        System.out.println("Nhập giới tính: ");
+        employee.setGender(sc.nextLine());
+        int idCMND = 0;
+        do {
+            try {
+                do {
+                    System.out.println("Nhập id CMND");
+                    employee.setIdCMND(idCMND = Integer.parseInt(sc.nextLine()));
+                } while (checkId(idCMND));
+                boolean flag = true;
+                if (idCMND <= 0) {
+                    System.out.println("idCMND phải là số dương");
+                    flag = false;
+                }
+                if (flag) {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Không phải là số");
+            }
+
+        } while (true);
+
+        String numberOfPhone;
+        do {
+            System.out.println("Nhập số điện thoại");
+            employee.setNumberOfPhone(numberOfPhone = sc.nextLine());
+            if (PhoneNumber.validateNumberOfPhone(numberOfPhone)){
+                break;
+            }
+        } while (true);
+        System.out.println("Nhập email:");
+        employee.setEmail(sc.nextLine());
+        System.out.println("Nhập trình độ:");
+        employee.setLevel(sc.nextLine());
+        System.out.println("Nhập vị trí làm việc:");
+        employee.setOptions(sc.nextLine());
+        int salary = 0;
+        do {
+            try {
+                boolean flag = true;
+                System.out.println("Nhập lương: ");
+                salary = Integer.parseInt(sc.nextLine());
+                if (salary <= 0) {
+                    System.out.println("Lương phải là số dương");
+                    flag = false;
+                }
+                if (flag) {
+                    break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Vui lòng nhập lương là số");
+            } catch (Exception e) {
+                System.out.println("Vui lòng nhập lại");
+            }
+        } while (true);
+        employee = new Employee(id, employee.getName(), employee.getDateOfBirth(), employee.getGender(), employee.getIdCMND(), employee.getNumberOfPhone(), employee.getEmail(), employee.getLevel(), employee.getOptions(), salary);
         for (int i = 0; i < employeeList.size(); i++) {
             if (employeeList.get(i).getId() == id) {
-                System.out.println("Nhập tên: ");
-                employee.setName(sc.nextLine());
-                System.out.println("Nhập ngày tháng năm sinh");
-                employee.setDateOfBirth(sc.nextLine());
-                System.out.println("Nhập giới tính: ");
-                employee.setGender(sc.nextLine());
-                int idCMND=0;
-                do {
-                    try {
-                        do {
-                            System.out.println("Nhập id CMND");
-                            employee.setIdCMND(idCMND=Integer.parseInt(sc.nextLine()));
-                        }while (checkId(idCMND));
-                        boolean flag = true;
-                        if (idCMND<=0){
-                            System.out.println("idCMND phải là số dương");
-                            flag = false;
-                        }
-                        if (flag){
-                            break;
-                        }
-                    }catch (NumberFormatException e){
-                        System.out.println("Không phải là số");
-                    }
-
-                }while (true);
-
-                String numberOfPhone = null;
-                do {
-                    try {
-                        boolean flag = true;
-                        System.out.println("Nhập sdt");
-                        employee.setNumberOfPhone(sc.nextLine());
-                        if (PhoneNumber.validateNumberOfPhone(numberOfPhone)) {
-                            System.out.println("Vui lòng nhập số điện thoại bắt đầu từ số 0 và có 8 số");
-                            flag = false;
-                        }
-                        if (flag) {
-                            break;
-                        }
-                    } catch (NumberFormatException e) {
-                        System.out.println("Vui Lòng nhập số ");
-                    } catch (Exception e) {
-                        System.out.println("Vui lòng nhập lại");
-                    }
-                } while (true);
-                System.out.println("Nhập email:");
-                employee.setEmail(sc.nextLine());
-                System.out.println("Nhập trình độ:");
-                employee.setLevel(sc.nextLine());
-                System.out.println("Nhập vị trí làm việc:");
-                employee.setOptions(sc.nextLine());
-                int salary = 0;
-                do {
-                    try {
-                        boolean flag = true;
-                        System.out.println("Nhập lương: ");
-                        salary = Integer.parseInt(sc.nextLine());
-                        if (salary <= 0) {
-                            System.out.println("Lương phải là số dương");
-                            flag = false;
-                        }
-                        if (flag) {
-                            break;
-                        }
-                    } catch (NumberFormatException e) {
-                        System.out.println("Vui lòng nhập lương là số");
-                    } catch (Exception e) {
-                        System.out.println("Vui lòng nhập lại");
-                    }
-                } while (true);
-                employee = new Employee(id, employee.getName(), employee.getDateOfBirth(), employee.getGender(), employee.getIdCMND(), numberOfPhone, employee.getEmail(), employee.getLevel(), employee.getOptions(), salary);
-                iRepositoryEmployee.edit(i,employee,employeeList,path);
+                iRepositoryEmployee.edit(i, employee, employeeList, path);
+                return;
             }
         }
+
     }
 }
+
+

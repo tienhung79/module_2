@@ -9,7 +9,11 @@ public class ValidateNameForClassName {
     public static boolean validateClassName(String regex) {
         return Pattern.matches(REGEX_CLASS, regex);
     }
-
+//    public static boolean validateClass(String regex) {
+//        Pattern pattern = Pattern.compile(CLASS_REGEX);
+//        Matcher  matcher = pattern.matcher(regex);
+//        return matcher.matches();
+//    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("nhập tên lớp: ");
