@@ -1,6 +1,7 @@
 package case_study.model;
 
 import case_study.model.abstractClass.Facility;
+import com.sun.org.apache.xalan.internal.xsltc.dom.SimpleResultTreeImpl;
 import jdk.nashorn.internal.runtime.OptimisticReturnFilters;
 
 public class House extends Facility {
@@ -15,8 +16,8 @@ public class House extends Facility {
         this.numberOfFloorsHouse = numberOfFloorsHouse;
     }
 
-    public House(String serviceName, int areaUse, int price, int peopleMax, String date, String standardsRoomHouse, int numberOfFloorsHouse) {
-        super(serviceName, areaUse, price, peopleMax, date);
+    public House(String id, String serviceName, int areaUse, int price, int peopleMax, String date, String standardsRoomHouse, int numberOfFloorsHouse) {
+        super(id,serviceName, areaUse, price, peopleMax, date);
         this.standardsRoomHouse = standardsRoomHouse;
         this.numberOfFloorsHouse = numberOfFloorsHouse;
     }

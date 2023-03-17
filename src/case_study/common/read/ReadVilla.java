@@ -23,8 +23,9 @@ public class ReadVilla {
             Villa villa;
             while ((temp= bufferedReader.readLine())!=null){
                 tempArray = temp.split(",");
-                villa = new Villa(tempArray[0],Integer.parseInt(tempArray[1]),Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),tempArray[4],tempArray[5],Integer.parseInt(tempArray[6]),Integer.parseInt(tempArray[7]));
-                int value =Integer.parseInt(tempArray[8]);
+//                String id,String serviceName, int areaUse, int price, int peopleMax, String date, String standardsRoom, int areaSwimPooll, int numberOfFloorsVilla
+                villa = new Villa(tempArray[0],tempArray[1],Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),Integer.parseInt(tempArray[4]),tempArray[5],tempArray[6],Integer.parseInt(tempArray[7]),Integer.parseInt(tempArray[8]));
+                int value =Integer.parseInt(tempArray[9]);
                 villaList.put(villa,value);
             }
             bufferedReader.close();

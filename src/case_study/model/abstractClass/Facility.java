@@ -3,6 +3,7 @@ package case_study.model.abstractClass;
 import java.util.Date;
 
 public class Facility {
+  private String id;
   private String serviceName;
   private int areaUse;
   private int price;
@@ -12,7 +13,7 @@ public class Facility {
   public Facility() {
   }
 
-  public Facility(String serviceName, int areaUse, int price, int peopleMax, String date) {
+  public Facility(String id,String serviceName, int areaUse, int price, int peopleMax, String date) {
     this.serviceName = serviceName;
     this.areaUse = areaUse;
     this.price = price;
@@ -60,6 +61,14 @@ public class Facility {
     this.date = date;
   }
 
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
   @Override
   public String toString() {
     return
@@ -70,6 +79,6 @@ public class Facility {
             ", date='" + date + '\'' ;
   }
   public String toWriteCSV(){
-    return getServiceName()+","+getAreaUse()+","+getPrice()+","+getPeopleMax()+","+getDate();
+    return getId()+","+getServiceName()+","+getAreaUse()+","+getPrice() +","+getPeopleMax()+","+getDate();
   }
 }

@@ -24,8 +24,8 @@ public class ReadHouse {
             House house;
             while ((temp= bufferedReader.readLine())!=null){
                 tempArray = temp.split(",");
-                house = new House(tempArray[0],Integer.parseInt(tempArray[1]),Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),tempArray[4],tempArray[5],Integer.parseInt(tempArray[6]));
-                int value= Integer.parseInt(tempArray[7]);
+                house = new House(tempArray[0],tempArray[1],Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),Integer.parseInt(tempArray[4]),tempArray[5],tempArray[6],Integer.parseInt(tempArray[7]));
+                int value= Integer.parseInt(tempArray[8]);
                 houseList.put(house,value);
             }
             bufferedReader.close();

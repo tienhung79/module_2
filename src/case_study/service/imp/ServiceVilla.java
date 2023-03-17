@@ -2,6 +2,8 @@ package case_study.service.imp;
 
 import case_study.common.read.ReadVilla;
 import case_study.common.write.WriteVilla;
+import case_study.format.FormatIdFacility;
+import case_study.format.FormatNameFacility;
 import case_study.model.Villa;
 
 import javax.xml.soap.SAAJResult;
@@ -14,8 +16,24 @@ public class ServiceVilla {
         Scanner sc = new Scanner(System.in);
 
         LinkedHashMap<Villa,Integer> villaLinkedHashMap = ReadVilla.readVilla("src/case_study/data/dataVilla.csv");
-        System.out.println("Nhập tên dịch vụ");
-        String name = "Villa";
+        String id ;
+        do {
+            System.out.println("Nhập id");
+           id = sc.nextLine();
+           if (FormatIdFacility.regexVilla(id)){
+              break;
+           }
+            System.out.println("Yêu cầu nhập đúng format ");
+        }while (true);
+        String name;
+        do {
+            System.out.println("Yêu cầu nhập tên");
+             name = sc.nextLine();
+             if (FormatNameFacility.formatNameFacilityVilla(name)){
+                 break;
+             }
+        }while (true);
+
         System.out.println("Nhập diện tích sử dụng");
         int areaUse = Integer.parseInt(sc.nextLine());
         System.out.println("Nhập giá ");
@@ -30,7 +48,7 @@ public class ServiceVilla {
         int areaSwimpool= Integer.parseInt(sc.nextLine());
         System.out.println("Nhập số tầng:");
         int numberOfFloorsVilla = Integer.parseInt(sc.nextLine());
-        Villa villa = new Villa(name,areaUse,price,peopleMax,date,standardsRoom,areaSwimpool,numberOfFloorsVilla);
+        Villa villa = new Villa(id,name,areaUse,price,peopleMax,date,standardsRoom,areaSwimpool,numberOfFloorsVilla);
         villaLinkedHashMap.put(villa,0);
         WriteVilla.writeVilla("src/case_study/data/dataVilla.csv",villaLinkedHashMap);
     }

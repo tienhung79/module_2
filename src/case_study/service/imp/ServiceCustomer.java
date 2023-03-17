@@ -162,7 +162,7 @@ public class ServiceCustomer implements IServiceCustomer {
     public void edit() {
         List<Customer> customerList = iRepositoryCustomer.disPlay();
         Scanner sc = new Scanner(System.in);
-        int id = 0;
+        int id =0 ;
         do {
             try {
                 do {
@@ -224,7 +224,7 @@ public class ServiceCustomer implements IServiceCustomer {
             try {
                 boolean flag = false;
                 System.out.println("Nhập số điện thoại: ");
-                customer.setNumberOfPhone(numberOfPhone=sc.nextLine());
+                customer.setNumberOfPhone(numberOfPhone = sc.nextLine());
                 if (PhoneNumber.validateNumberOfPhone(numberOfPhone)) {
                     flag = true;
                 }
@@ -244,6 +244,14 @@ public class ServiceCustomer implements IServiceCustomer {
         System.out.println("Sửa địa chỉ");
         customer.setAddress(sc.nextLine());
         customer = new Customer(id, customer.getName(), customer.getDateOfBirth(), customer.getGender(), customer.getIdCMND(), customer.getNumberOfPhone(), customer.getEmail(), customer.getKindOfCustomer(), customer.getAddress());
-        iRepositoryCustomer.repairCustomer(id, customerList, path, customer);
+        for (int i = 0; i < customerList.size(); i++) {
+            if (customerList.get(i).getId() == id) {
+                iRepositoryCustomer.repairCustomer(i, customerList, path, customer);
+                return;
+            }
+
+        }
     }
+
 }
+

@@ -75,4 +75,5 @@ public class Customer extends Person {
         return super.toWriteCSV() +","+ kindOfCustomer + "," + address;
 
     }
+
 }

@@ -23,10 +23,8 @@ public class RepositoryCustomer implements IRepositoryCutomer {
     }
 
     @Override
-    public void repairCustomer(int id, List<Customer> customerList, String path, Customer customer) {
-        List<Customer> customerList1= disPlay();
-        customerList1.set(customerList1.indexOf(customer),customer);
-        WriteCustomer.writeCustomer(path, (LinkedList<Customer>) customerList);
-    }
-
+    public void repairCustomer(int i, List<Customer> customerList, String path, Customer customer) {
+                customerList.set(i, customer);
+                WriteCustomer.writeCustomer(path, (LinkedList<Customer>) customerList);
+        }
 }

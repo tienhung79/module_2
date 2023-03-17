@@ -24,8 +24,8 @@ public class ReadRoom {
             Room room;
             while ((temp= bufferedReader.readLine())!=null){
                 tempArray = temp.split(",");
-                room = new Room(tempArray[0],Integer.parseInt(tempArray[1]),Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),tempArray[4],tempArray[5]);
-                int value = Integer.parseInt(tempArray[6]);
+                room = new Room(tempArray[0],tempArray[1],Integer.parseInt(tempArray[2]),Integer.parseInt(tempArray[3]),Integer.parseInt(tempArray[4]),tempArray[5],tempArray[6]);
+                int value = Integer.parseInt(tempArray[7]);
                 roomList.put(room,value);
             }
             bufferedReader.close();
