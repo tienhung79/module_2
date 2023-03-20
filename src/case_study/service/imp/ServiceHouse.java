@@ -24,18 +24,34 @@ public class ServiceHouse {
         }while (true);
 
         String name = "House";
-        System.out.println("Nhập diện tích sử dụng");
-        int areaUse = Integer.parseInt(sc.nextLine());
-        System.out.println("Nhập giá ");
-        int price = Integer.parseInt(sc.nextLine());
-        System.out.println("Nhập số người");
-        int peopleMax = Integer.parseInt(sc.nextLine());
+        int areaUse;
+        do {
+            System.out.println("Nhập diện tích sử dụng");
+            System.out.println("Diện tích sử dụng phải lớn hơn 30");
+            areaUse = Integer.parseInt(sc.nextLine());
+        }while (areaUse<30);
+        int price;
+        do {
+            System.out.println("Nhập giá ");
+            System.out.println("Giá phải là số dương");
+             price = Integer.parseInt(sc.nextLine());
+        }while (price<0);
+        int peopleMax;
+        do {
+            System.out.println("Nhập số người phải lớn hơn 0 hoặc nhỏ hơn 20");
+             peopleMax = Integer.parseInt(sc.nextLine());
+        }while (peopleMax>20||peopleMax<0);
         System.out.println("Nhập thời gian thuê");
         String date = sc.nextLine();
         System.out.println("Nhập tiêu chuẩn phòng");
         String standardsRoom = sc.nextLine();
-        System.out.println("Nhập số tầng:");
-        int numberOfFloorsVilla = Integer.parseInt(sc.nextLine());
+        int numberOfFloorsVilla;
+        do {
+            System.out.println("Nhập số tầng:");
+            System.out.println("Số tầng phải lớn hơn 0");
+            numberOfFloorsVilla = Integer.parseInt(sc.nextLine());
+        }while (numberOfFloorsVilla<0);
+
         House house = new House(id,name, areaUse, price, peopleMax, date, standardsRoom, numberOfFloorsVilla);
         houseIntegerLinkedHashMap.put(house, 0);
         WriteHouse.writeHouse("src/case_study/data/dataHouse.csv", houseIntegerLinkedHashMap);

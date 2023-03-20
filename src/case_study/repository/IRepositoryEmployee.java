@@ -11,4 +11,6 @@ public interface IRepositoryEmployee {
     void addNew(String path, List<Employee> employeeList);
 
     void edit(int i, Employee employee, List<Employee> employeeList, String path);
+
+    void delete(int i);
 }

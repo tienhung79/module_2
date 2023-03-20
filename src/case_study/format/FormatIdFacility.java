@@ -10,7 +10,7 @@ public class FormatIdFacility {
     public static boolean regexRoom(String regex){return Pattern.matches(REGEX_ROOM,regex);
     }
     private static final String REGEX_HOUSE = "^[S][V][H][O]-\\d{4}\\d{0,}$";
-    public static boolean regexHouse(String regex){return Pattern.matches(REGEX_VILLA,regex);
+    public static boolean regexHouse(String regex){return Pattern.matches(REGEX_HOUSE,regex);
     }
 
 }

@@ -1,5 +1,6 @@
 package case_study.service.imp;
 
+import case_study.format.FormatEmail;
 import case_study.format.FormatName;
 import case_study.format.PhoneNumber;
 import case_study.model.Employee;
@@ -7,6 +8,7 @@ import case_study.repository.IRepositoryEmployee;
 import case_study.repository.imp.RepositoryEmployee;
 import case_study.service.IServiceEmployee;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -186,7 +188,7 @@ public class ServiceEmployee implements IServiceEmployee {
         employee.setDateOfBirth(sc.nextLine());
         System.out.println("Nhập giới tính: ");
         employee.setGender(sc.nextLine());
-        int idCMND = 0;
+        int idCMND ;
         do {
             try {
                 do {
@@ -215,8 +217,14 @@ public class ServiceEmployee implements IServiceEmployee {
                 break;
             }
         } while (true);
-        System.out.println("Nhập email:");
-        employee.setEmail(sc.nextLine());
+        String email;
+        do {
+            System.out.println("Nhập email:");
+            employee.setEmail(email=sc.nextLine());
+            if (FormatEmail.regexEmail(email)){
+                break;
+            }
+        }while (true);
         System.out.println("Nhập trình độ:");
         employee.setLevel(sc.nextLine());
         System.out.println("Nhập vị trí làm việc:");
@@ -248,6 +256,23 @@ public class ServiceEmployee implements IServiceEmployee {
             }
         }
 
+    }
+
+    @Override
+    public void delete() {
+        Scanner sc= new Scanner(System.in);
+        List<Employee> employeeList = iRepositoryEmployee.getAll();
+        int id;
+        do {
+            System.out.println("Nhập id muốn xóa");
+            id = Integer.parseInt(sc.nextLine());
+        }while (checkIdSame(id));
+        for (int i = 0; i < employeeList.size(); i++) {
+            if (employeeList.get(i).getId()==id){
+             iRepositoryEmployee.delete(i);
+             return;
+            }
+        }
     }
 }
 

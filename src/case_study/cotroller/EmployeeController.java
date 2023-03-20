@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class EmployeeController {
     IServiceEmployee iServiceEmployee = new ServiceEmployee();
+
     public void displayEmployeeMenu() {
         Scanner sc = new Scanner(System.in);
         String choice;
@@ -15,7 +16,8 @@ public class EmployeeController {
             System.out.println("1.Display list employees");
             System.out.println("2.Add new employee");
             System.out.println("3.Edit employee");
-            System.out.println("4.Return main menu");
+            System.out.println("4.Delete employee");
+            System.out.println("5.Return main menu");
             System.out.println("---------------------------");
             System.out.print("Choice:");
             choice = sc.nextLine();
@@ -30,9 +32,13 @@ public class EmployeeController {
                     iServiceEmployee.edit();
                     break;
                 case "4":
+                    iServiceEmployee.delete();
+                    break;
+                case "5":
                     new FuramaController().displayMainMenu();
                     break;
+
             }
-        } while (!choice.equals("4"));
+        } while (!choice.equals("5"));
     }
 }

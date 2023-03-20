@@ -24,4 +24,11 @@ public class RepositoryEmployee implements IRepositoryEmployee {
         employeeList.set(i,employee);
         WriteEmployees.writeEmployees(path,employeeList);
     }
+
+    @Override
+    public void delete(int i) {
+        List<Employee> employeeList = getAll();
+        employeeList.remove(i);
+        WriteEmployees.writeEmployees(path,employeeList);
+    }
 }
