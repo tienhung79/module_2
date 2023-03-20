@@ -1,9 +1,6 @@
 package case_study.service.imp;
 
-import case_study.format.FormatDate;
-import case_study.format.FormatName;
-import case_study.format.FormatNameFacility;
-import case_study.format.PhoneNumber;
+import case_study.format.*;
 import case_study.model.Customer;
 import case_study.repository.IRepositoryCutomer;
 import case_study.repository.imp.RepositoryCustomer;
@@ -253,8 +250,15 @@ public class ServiceCustomer implements IServiceCustomer {
                 System.out.println("Nhập sai. Yêu cầu nhập lại");
             }
         } while (true);
-        System.out.println("Sửa email");
-        customer.setEmail(sc.nextLine());
+        String email;
+        do {
+            System.out.println("Sửa email");
+            customer.setEmail(email=sc.nextLine());
+            if (FormatEmail.regexEmail(email)){
+                break;
+            }
+        }while (true);
+
         System.out.println("Sửa loại khách hàng");
         customer.setKindOfCustomer(sc.nextLine());
         System.out.println("Sửa địa chỉ");
